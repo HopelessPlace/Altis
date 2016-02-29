@@ -28,33 +28,27 @@ switch (_side) do
 	case civilian:
 	{
 		_return = [
-			["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["civ_spawn_2","Pyrgos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["civ_spawn_4","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 
 		//
-		// XOXO Beginner Spawn Point
+		// XOXO Rebel Spawn Points
 		//
-
-		// cash in ATM
-		if (life_atmcash < 1000000) then {
-			// cash in pocket
-			if (life_cash < 100000) then {
-				_return pushBack ["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
-			};
-		};
-		
 		if (license_civ_rebel && playerSide == civilian) then {
 			//
 			// XOXO Rebel Outpost North West
 			//
 			_return pushBack ["rebel_spawn_1", "Rebels NW", "\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
-			
+
 			//
 			// XOXO Rebel Outpost South West
 			//
-			_return pushBack ["rebel_spawn_2", "Rebels SW", "\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+			if (life_atmbank > 599999) then {
+				_return pushBack ["rebel_spawn_2", "Rebels SW", "\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+			} else {
+				if (life_cash > 599999) then {
+					_return pushBack ["rebel_spawn_2", "Rebels SW", "\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+				};
+			};
 		};
 		
 		if(count life_houses > 0) then {
@@ -65,7 +59,24 @@ switch (_side) do
 				
 				_return pushBack [format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"];
 			} foreach life_houses;
-		};	
+		};
+
+		//
+		// XOXO Beginner Spawn Point
+		//
+		if (life_atmbank < 599999) then {
+			_return pushBack ["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+		} else {
+			_return pushBack ["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+			
+			//
+			// You can only spawn in the outer cities if you do not carry too much money around on you.
+			//
+			if (life_cash < 999999) then {
+				_return pushBack ["civ_spawn_2","Pyrgos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+				_return pushBack ["civ_spawn_4","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+			};
+		};
 	};
 	
 	case independent: {

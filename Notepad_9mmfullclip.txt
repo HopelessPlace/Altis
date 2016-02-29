@@ -6,16 +6,7 @@
 //
 // Retrieve from Car Garage
 //
-this addAction[
-	localize""STR_Garage_Title"",  {
-		[getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];
-		life_garage_type = ""Car"";
-		createDialog ""Life_impound_menu"";
-		disableSerialization;
-		ctrlSetText[2802,""Fetching Vehicles....""];
-		life_garage_sp = ""car_ENTER_SPAWNPOINT_MARKER_FROM_MAP_HERE"";
-	}
-];
+this addAction[localize""STR_Garage_Title"", {[getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2]; life_garage_type = ""Car""; createDialog ""Life_impound_menu""; disableSerialization; ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp = ""car_ENTER_SPAWNPOINT_MARKER_FROM_MAP_HERE"";}];
 
 //
 // Store in Garage
@@ -44,16 +35,7 @@ this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""
 //
 // Retrieve from Air Garage
 //
-this addAction[
-	localize""STR_Garage_Title"",  {
-		[getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];
-		life_garage_type = ""Air"";
-		createDialog ""Life_impound_menu"";
-		disableSerialization;
-		ctrlSetText[2802,""Fetching Vehicles....""];
-		life_garage_sp = ""air_ENTER_SPAWNPOINT_MARKER_FROM_MAP_HERE"";
-	}
-];
+this addAction[localize""STR_Garage_Title"", {[getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2]; life_garage_type = ""Air""; createDialog ""Life_impound_menu""; disableSerialization; ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp = ""reb_v_1"";}];  
 
 //
 // Store in Air Garage
@@ -84,3 +66,59 @@ this addAction[
 					
 					
 										init="	removeallWeapons this;	this enableSimulation false;	this allowDamage false;		this addAction[		localize""STR_MAR_W_E_Vehicle Shop"",		life_fnc_vehicleShopMenu,		[			""reb_car"",			civilian,			[""reb_v_2"",""reb_v_2_1""],			""reb"",			""Rebel Motorpool - Southern Side""		],		0,		false,		false,		"""",		'license_civ_rebel'	];	this addAction[		""Car Garage"",		{			[getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];			life_garage_type = ""Car"";			createDialog ""Life_impound_menu"";			disableSerialization;			ctrlSetText[2802,""Fetching Vehicles....""];			life_garage_sp = [""reb_v_2"",""reb_v_2_1""];		}	];this addAction[	""Helicopter Garage"",  {		[getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];		life_garage_type = ""Air"";		createDialog ""Life_impound_menu"";		disableSerialization;		ctrlSetText[2802,""Fetching Vehicles....""];		life_garage_sp = [""reb_v_2"",""reb_v_2_1""];}];this addAction[	localize""STR_MAR_Store_vehicle_in_Garage"", {		private[""_nearVehicle""];		_nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;		if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};		[_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2];		hint ""The server is trying to store the vehicle please wait...."";		life_garage_store = true;		},	"""",	0,	false,	false,	"""",	'!life_garage_store'];    this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""civ_air"",civilian,[""reb_v_2"", ""reb_v_2_1""],""civ"",""Carl's Airial Auto's""]];  ";	
+										
+										
+										
+												if (life_atmcash < 599999) then {
+			if (life_cash < 599999) then {
+				//
+				// You neither have cash in the bank account nor cash in your pocket
+				//
+				_return pushBack ["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+			} else {
+				//
+				// You do not have cash in the bank but you are carrying enough money to be robbed.
+				// Spawn in Athira and bring it to an ATM!
+				//
+				_return pushBack ["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+			};
+		} else {
+			if (life_cash > 999999) then {
+				//
+				// If you are carrying too much money you cannot spawn anywhere, only Athira.
+				// Bring your stuff to the ATM!
+				//
+				_return pushBack ["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+			} else {
+				//
+				// Rich people who do not carry around too much money will be able to spawn anywhere
+				//
+				_return pushBack ["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+				_return pushBack ["civ_spawn_2","Pyrgos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+				_return pushBack ["civ_spawn_4","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+			};
+		};
+		
+		if (license_civ_rebel && playerSide == civilian) then {
+			//
+			// XOXO Rebel Outpost North West
+			//
+			_return pushBack ["rebel_spawn_1", "Rebels NW", "\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+
+			//
+			// XOXO Rebel Outpost South West
+			//
+			if (life_atmcash > 599999) then {
+				_return pushBack ["rebel_spawn_2", "Rebels SW", "\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+			} else {
+				if (life_cash > 599999) then {
+					return pushBack ["rebel_spawn_2", "Rebels SW", "\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+				};
+			};
+		};
+		
+		
+		
+		
+		
+this addAction[localize""STR_MAR_Store_vehicle_in_Garage"", {private[""_nearVehicle""]; _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0; if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";}; [_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2]; hint ""The server is trying to store the vehicle please wait....""; life_garage_store = true; }, """", 0,	false, false, """", '!life_garage_store'];
