@@ -1,0 +1,77 @@
+
+//
+// ### CARS ###
+//
+
+//
+// Retrieve from Car Garage
+//
+this addAction[
+	localize""STR_Garage_Title"",  {
+		[getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];
+		life_garage_type = ""Car"";
+		createDialog ""Life_impound_menu"";
+		disableSerialization;
+		ctrlSetText[2802,""Fetching Vehicles....""];
+		life_garage_sp = ""car_ENTER_SPAWNPOINT_MARKER_FROM_MAP_HERE"";
+	}
+];
+
+//
+// Store in Garage
+//
+this addAction[
+	localize""STR_MAR_Store_vehicle_in_Garage"",
+	life_fnc_storeVehicle,
+	"""",
+	0,
+	false,
+	false,
+	"""",
+	'!life_garage_store'
+];
+
+//
+// ### HELICOPTERS ###
+//
+
+//
+// Helicopter Shop
+//
+this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""civ_air"",civilian,[""ENTER_SPAWNPOINT_HERE"",""ENTER_SPAWNPOINT_HERE""],""civ"",""Carl's Airial Auto's""]];
+
+
+//
+// Retrieve from Air Garage
+//
+this addAction[
+	localize""STR_Garage_Title"",  {
+		[getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];
+		life_garage_type = ""Air"";
+		createDialog ""Life_impound_menu"";
+		disableSerialization;
+		ctrlSetText[2802,""Fetching Vehicles....""];
+		life_garage_sp = ""air_ENTER_SPAWNPOINT_MARKER_FROM_MAP_HERE"";
+	}
+];
+
+//
+// Store in Air Garage
+//	
+this addAction[
+	localize""STR_MAR_Store_vehicle_in_Garage"", {
+		private[""_nearVehicle""];
+		_nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;
+		if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};
+		[_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2];
+		hint ""The server is trying to store the vehicle please wait...."";
+		life_garage_store = true;
+		},
+	"""",
+	0,
+	false,
+	false,
+	"""",
+	'!life_garage_store'
+];
+
