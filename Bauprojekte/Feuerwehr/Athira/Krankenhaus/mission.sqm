@@ -1,3 +1,79 @@
-//
-// initial
-//
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+	};
+	addOnsAuto[]=
+	{
+	};
+	randomSeed=13763187;
+	class Intel
+	{
+		timeOfChanges=0;startWeather=0;startWind=0;startWaves=0;forecastWeather=0;forecastWind=0;forecastWaves=0;forecastLightnings=0;year=2035;day=1;hour=12;minute=0;startFogDecay=0;forecastFogDecay=0;
+	};
+	class Vehicles
+	{
+		items=17;
+		class Item0{position[]={14294.294922,-0.758877,18570.582031};azimut=3.67998;offsetY=-0.758877;id=1;side="EMPTY";vehicle="Land_Pier_F";skill=0.60000002;init="this enableSimulation true;this setdir 3.67998;this setposATL [14294.294922,18570.582031,-0.758877];this setVectorUp [0,0,1]";};
+		class Item1{position[]={14335.81543,-1.39971,18567.886719};azimut=3.74614;offsetY=-1.39971;id=2;side="EMPTY";vehicle="Land_Pier_F";skill=0.60000002;init="this enableSimulation true;this setdir 3.74614;this setposATL [14335.81543,18567.886719,-1.39971];this setVectorUp [0,0,1]";};
+		class Item2{position[]={14293.337891,-0.371368,18555.8125};azimut=3.67998;offsetY=-0.371368;id=3;side="EMPTY";vehicle="Land_Pier_F";skill=0.60000002;init="this enableSimulation true;this setdir 3.67998;this setposATL [14293.337891,18555.8125,-0.371368];this setVectorUp [0,0,1]";};
+		class Item3{position[]={14291.912109,0.0882854,18536.521484};azimut=183.68;offsetY=0.0882854;id=4;side="EMPTY";vehicle="Land_Pier_F";skill=0.60000002;init="this enableSimulation true;this setdir 183.68;this setposATL [14291.912109,18536.521484,0.0882854];this setVectorUp [0,0,1]";};
+		class Item4{position[]={14334.853516,-0.464993,18553.0898438};azimut=3.67998;offsetY=-0.464993;id=5;side="EMPTY";vehicle="Land_Pier_F";skill=0.60000002;init="this enableSimulation true;this setdir 3.67998;this setposATL [14334.853516,18553.0898438,-0.464993];this setVectorUp [0,0,1]";};
+		class Item5{position[]={14333.429688,0.448757,18533.849609};azimut=183.68;offsetY=0.448757;id=6;side="EMPTY";vehicle="Land_Pier_F";skill=0.60000002;init="this enableSimulation true;this setdir 183.68;this setposATL [14333.429688,18533.849609,0.448757];this setVectorUp [0,0,1]";};
+		class Item6{position[]={14284.587891,1.52664,18567.599609};azimut=93.6802;offsetY=1.52664;id=7;side="EMPTY";vehicle="Land_Hospital_side2_F";skill=0.60000002;init="this enableSimulation true;this setdir 93.6802;this setposATL [14284.587891,18567.599609,1.52664];this setVectorUp [0,0,1]";};
+		class Item7{position[]={14292.803711,2.08664,18539.0214844};azimut=93.6802;offsetY=2.08664;id=8;side="EMPTY";vehicle="Land_Hospital_main_F";skill=0.60000002;init="this enableSimulation true;this setdir 93.6802;this setposATL [14292.803711,18539.0214844,2.08664];this setVectorUp [0,0,1]";};
+		class Item8{position[]={14325.0361328,2.67151,18532.242188};azimut=93.6802;offsetY=2.67151;id=9;side="EMPTY";vehicle="Land_Hospital_side1_F";skill=0.60000002;init="this enableSimulation true;this setdir 93.6802;this setposATL [14325.0361328,18532.242188,2.67151];this setVectorUp [0,0,1]";};
+		class Item9{position[]={14337.737305,2.43513,18541.46875};azimut=3.67999;offsetY=2.43513;id=10;side="EMPTY";vehicle="Land_i_Garage_V1_F";skill=0.60000002;init="this enableSimulation true;this setdir 3.67999;this setposATL [14337.737305,18541.46875,2.43513];this setVectorUp [0,0,1]";};
+		class Item10{position[]={14338.125,2.09422,18547.441406};azimut=3.67999;offsetY=2.09422;id=11;side="EMPTY";vehicle="Land_i_Garage_V1_F";skill=0.60000002;init="this enableSimulation true;this setdir 3.67999;this setposATL [14338.125,18547.441406,2.09422];this setVectorUp [0,0,1]";};
+		class Item11{position[]={14338.508789,1.76077,18553.402344};azimut=3.67999;offsetY=1.76077;id=12;side="EMPTY";vehicle="Land_i_Garage_V1_F";skill=0.60000002;init="this enableSimulation true;this setdir 3.67999;this setposATL [14338.508789,18553.402344,1.76077];this setVectorUp [0,0,1]";};
+		class Item12{position[]={14339.270508,0.87402,18565.300781};azimut=3.68018;offsetY=0.87402;id=13;side="EMPTY";vehicle="Land_i_Garage_V1_F";skill=0.60000002;init="this enableSimulation true;this setdir 3.68018;this setposATL [14339.270508,18565.300781,0.87402];this setVectorUp [0,0,1]";};
+		class Item13{position[]={14338.886719,1.33685,18559.332031};azimut=3.67999;offsetY=1.33685;id=14;side="EMPTY";vehicle="Land_i_Garage_V1_F";skill=0.60000002;init="this enableSimulation true;this setdir 3.67999;this setposATL [14338.886719,18559.332031,1.33685];this setVectorUp [0,0,1]";};
+		class Item14{position[]={14310.671875,0.456408,18574.208984};azimut=3.68018;offsetY=0.456408;id=15;side="EMPTY";vehicle="Land_Canal_Wall_10m_F";skill=0.60000002;init="this enableSimulation true;this setdir 3.68018;this setposATL [14310.671875,18574.208984,0.456408];this setVectorUp [0,0,1]";};
+		class Item15{position[]={14310.739258,-0.10339,18575.265625};azimut=3.68018;offsetY=-0.10339;id=16;side="EMPTY";vehicle="Land_Canal_Wall_10m_F";skill=0.60000002;init="this enableSimulation true;this setdir 3.68018;this setposATL [14310.739258,18575.265625,-0.10339];this setVectorUp [0,0,1]";};
+		class Item16{position[]={14310.4375,1.23519,18574.759766};azimut=3.68018;offsetY=1.23519;id=17;side="EMPTY";vehicle="Land_BarGate_F";skill=0.60000002;init="this enableSimulation true;this setdir 3.68018;this setposATL [14310.4375,18574.759766,1.23519];this setVectorUp [0,0,1]";};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+	};
+	addOnsAuto[]=
+	{
+	};
+	randomSeed=13763187;
+	class Intel
+	{
+		timeOfChanges=0;startWeather=0;startWind=0;startWaves=0;forecastWeather=0;forecastWind=0;forecastWaves=0;forecastLightnings=0;year=2035;day=1;hour=12;minute=0;startFogDecay=0;forecastFogDecay=0;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+	};
+	addOnsAuto[]=
+	{
+	};
+	randomSeed=13763187;
+	class Intel
+	{
+		timeOfChanges=0;startWeather=0;startWind=0;startWaves=0;forecastWeather=0;forecastWind=0;forecastWaves=0;forecastLightnings=0;year=2035;day=1;hour=12;minute=0;startFogDecay=0;forecastFogDecay=0;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+	};
+	addOnsAuto[]=
+	{
+	};
+	randomSeed=13763187;
+	class Intel
+	{
+		timeOfChanges=0;startWeather=0;startWind=0;startWaves=0;forecastWeather=0;forecastWind=0;forecastWaves=0;forecastLightnings=0;year=2035;day=1;hour=12;minute=0;startFogDecay=0;forecastFogDecay=0;
+	};
+};
+
