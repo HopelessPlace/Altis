@@ -1,4 +1,12 @@
 
+// Hospital spawnen:
+OpforBase="Land_Hospital_main_F" createVehicle position this;  OpforBase1="Land_Hospital_side1_F" createVehicle position this;  OpforBase2="Land_Hospital_side2_F" createVehicle position this;  deleteVehicle this;  this setvectorup [0,0,1]; 
+
+// hiden
+
+_toHide = [12345,5678,92123];{([0,0,0] nearestObject _x) hideObject true;} forEach _toHide;
+
+
 //
 // ### CARS ###
 //
@@ -122,3 +130,11 @@ this addAction[
 		
 		
 this addAction[localize""STR_MAR_Store_vehicle_in_Garage"", {private[""_nearVehicle""]; _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0; if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";}; [_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2]; hint ""The server is trying to store the vehicle please wait....""; life_garage_store = true; }, """", 0,	false, false, """", '!life_garage_store'];
+
+
+
+xoxo setObjectTexture [0, "0_8.jpg"]; xoxo setObjectTexture [1, "1_22.jpg"]; xoxo_1 setObjectTexture [0, "0grid0.jpg"]; xoxo_1 setObjectTexture [1, "1grid1.jpg"]; xoxo3 setObjectTexture [0, "rangemaster_grid.jpg"]
+
+
+xoxo setObjectTexture [0, "mek0_12.jpg"]; xoxo addBackPack "B_AssaultPack_blk";  xoxo addHeadGear "H_Watchcap_blk"; [player, "srifle_DMR_05_DMS_snds_F", 6] call BIS_fnc_addWeapon;
+
