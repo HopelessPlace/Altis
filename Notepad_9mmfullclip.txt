@@ -138,3 +138,15 @@ xoxo setObjectTexture [0, "0_8.jpg"]; xoxo setObjectTexture [1, "1_22.jpg"]; xox
 
 xoxo setObjectTexture [0, "mek0_12.jpg"]; xoxo addBackPack "B_AssaultPack_blk";  xoxo addHeadGear "H_Watchcap_blk"; [player, "srifle_DMR_05_DMS_snds_F", 6] call BIS_fnc_addWeapon;
 
+
+
+xoxo setObjectTexture [0, "mek0_18.jpg"]; xoxo addBackPack "B_AssaultPack_blk"; xoxo addHeadGear "H_Watchcap_blk"; [player, "srifle_DMR_05_DMS_snds_F", 6] call BIS_fnc_addWeapon; xoxo addItem "bipod_01_F_blk"; xoxo addVest "V_TacVest_blk_POLICE"; xoxo addItem "acc_pointer_IR"; xoxo addItem "optic_Nightstalker"
+
+
+
+ROT: #(rgb,8,8,3)color(1,0,0,1)
+
+xoxo setObjectTexture [0, "Notarzt_0_19.jpg"]; xoxo2 setObjectTexture [0, "Notarzt_0_19.jpg"]; xoxo addHeadGear "H_RacingHelmet_1_red_F"; xoxo2 addHeadGear "H_RacingHelmet_1_red_F"; xoxo addBackpack "B_AssaultPack_blk"; (backpackContainer xoxo) setObjectTextureGlobal [0, "#(rgb,8,8,3)color(1,0,0,1)"];
+
+xoxo setObjectTexture [0, "Notarzt_0_19.jpg"]; xoxo2 setObjectTexture [0, "Notarzt_0_19.jpg"]; xoxo addHeadGear "H_RacingHelmet_1_black_F"; xoxo2 addHeadGear "H_RacingHelmet_1_black_F"; xoxo addBackpack "B_AssaultPack_blk"; (backpackContainer xoxo) setObjectTextureGlobal [0, "#(rgb,8,8,3)color(1,0,0,1)"]; xoxo addVest "V_PlateCarrier1_blk"
+
