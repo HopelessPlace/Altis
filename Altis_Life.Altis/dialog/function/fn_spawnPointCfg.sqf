@@ -23,6 +23,7 @@ switch (_side) do
 			["cop_spawn_4","Air HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
 			["cop_spawn_5","HW Patrol","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 		];
+		
 	};
 	
 	case civilian:

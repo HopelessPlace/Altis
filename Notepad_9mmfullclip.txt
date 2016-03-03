@@ -150,3 +150,121 @@ xoxo setObjectTexture [0, "Notarzt_0_19.jpg"]; xoxo2 setObjectTexture [0, "Notar
 
 xoxo setObjectTexture [0, "Notarzt_0_19.jpg"]; xoxo2 setObjectTexture [0, "Notarzt_0_19.jpg"]; xoxo addHeadGear "H_RacingHelmet_1_black_F"; xoxo2 addHeadGear "H_RacingHelmet_1_black_F"; xoxo addBackpack "B_AssaultPack_blk"; (backpackContainer xoxo) setObjectTextureGlobal [0, "#(rgb,8,8,3)color(1,0,0,1)"]; xoxo addVest "V_PlateCarrier1_blk"
 
+
+
+DEFEKT:
+
+#include "..\..\script_macros.hpp"
+/*
+    File: fn_playerSkins.sqf
+    Author: Daniel Stuart
+
+    Description:
+    Sets skins for players by their side and uniform.
+*/
+switch(playerSide) do {
+	case civilian: {
+		if(EQUAL(LIFE_SETTINGS(getNumber,"civ_skins"),1)) then {
+			if(uniform player == "U_C_Poloshirt_blue") then {
+				player setObjectTextureGlobal [0, "textures\civilian_uniform_1.jpg"];
+			};
+			if(uniform player == "U_C_Poloshirt_burgundy") then {
+				player setObjectTextureGlobal [0, "textures\civilian_uniform_2.jpg"];
+			};
+			if(uniform player == "U_C_Poloshirt_stripped") then {
+				player setObjectTextureGlobal [0, "textures\civilian_uniform_3.jpg"];
+			};
+			if(uniform player == "U_C_Poloshirt_tricolour") then {
+				player setObjectTextureGlobal [0, "textures\civilian_uniform_4.jpg"];
+			};
+			if(uniform player == "U_C_Poloshirt_salmon") then {
+				player setObjectTextureGlobal [0, "textures\civilian_uniform_5.jpg"];
+			};
+			if(uniform player == "U_C_Poloshirt_redwhite") then {
+				player setObjectTextureGlobal [0, "textures\civilian_uniform_6.jpg"];
+			};
+			if(uniform player == "U_C_Commoner1_1") then {
+				player setObjectTextureGlobal [0, "textures\civilian_uniform_7.jpg"];
+			};
+		};
+	};
+	case west: {
+		switch (uniform player) do {
+			case "U_Rangemaster": {
+				switch (life_coplevel) do {
+					case 0: {
+						player setObjectTextureGlobal [0, "textures\cop_uniform.jpg"];
+					};
+					case 1: {
+						player setObjectTextureGlobal [0, "textures\cop_uniform_1.paa"];
+					};
+					case 2: {
+						player setObjectTextureGlobal [0, "textures\cop_uniform_2.paa"];
+					};
+					case 3: {
+						player setObjectTextureGlobal [0, "textures\cop_uniform_3.paa"];
+					};
+					case 4: {
+						player setObjectTextureGlobal [0, "textures\cop_uniform_4.paa"];
+					};
+					case 5: {
+						player setObjectTextureGlobal [0, "textures\cop_uniform_5.paa"];
+					};
+					case 6: {
+						player setObjectTextureGlobal [0, "textures\cop_uniform_6.paa"];
+					};
+					case 7: {
+						player setObjectTextureGlobal [0, "textures\cop_uniform_7.paa"];
+					};
+				};
+			};
+			case "U_B_CombatUniform_mcam_worn": {
+				switch (life_coplevel) do {
+					case 0: {
+						player setObjectTextureGlobal [0, "textures\mek_uniform.jpg"];
+					};
+					case 1: {
+						player setObjectTextureGlobal [0, "textures\mek_uniform_1.jpg"];
+					};
+					case 2: {
+						player setObjectTextureGlobal [0, "textures\mek_uniform_2.jpg"];
+					};
+					case 3: {
+						player setObjectTextureGlobal [0, "textures\mek_uniform_3.jpg"];
+					};
+					case 4: {
+						player setObjectTextureGlobal [0, "textures\mek_uniform_4.jpg"];
+					};
+					case 5: {
+						player setObjectTextureGlobal [0, "textures\mek_uniform_5.jpg"];
+					};
+					case 6: {
+						player setObjectTextureGlobal [0, "textures\mek_uniform_6.jpg"];
+					};
+					case 7: {
+						player setObjectTextureGlobal [0, "textures\mek_uniform_7.jpg"];
+					};
+				};
+			};
+		};
+	
+		if(uniform player == "U_Rangemaster") then {
+			
+		
+			// if(FETCH_CONST(life_coplevel) == 0) then {
+			if (life_coplevel == 0) then {
+				player setObjectTextureGlobal [0, "textures\cop_uniform_0.jpg"];
+			};
+			
+		};
+		
+		
+	};
+	case independent: {
+		if(uniform player == "U_Rangemaster") then {
+			player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
+		};
+	};
+};
+
+
