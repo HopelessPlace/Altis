@@ -45,29 +45,7 @@ if(EQUAL(LIFE_SETTINGS(getNumber,"allow_medic_weapons"),0)) then
 		
 		sleep 2;
 
-		if ((FETCH_CONST(life_coplevel)) == 0) then {
-			player setObjectTextureGlobal [0, "textures\medic_rettungshelfer.paa"];
-		};
-		
-		if ((FETCH_CONST(life_coplevel)) == 1) then {
-			player setObjectTextureGlobal [0, "textures\medic_rettungshelfer.paa"];
-		};
-
-		if ((FETCH_CONST(life_coplevel)) == 2) then {
-			player setObjectTextureGlobal [0, "textures\medic_rettungshelfer.paa"];
-		};
-
-		if ((FETCH_CONST(life_coplevel)) == 3) then {
-			player setObjectTextureGlobal [0, "textures\medic_rettungshelfer.paa"];
-		};
-
-		if ((FETCH_CONST(life_coplevel)) == 4) then {
-			player setObjectTextureGlobal [0, "textures\medic_rettungshelfer.paa"];
-		};
-
-		if ((FETCH_CONST(life_coplevel)) == 5) then {
-			player setObjectTextureGlobal [0, "textures\medic_rettungshelfer.paa"];
-		};
+		player setObjectTextureGlobal [0, "textures\rettungssanitater.paa"];
 
 		waitUntil {uniform player != "U_Rangemaster"};
 	};
@@ -91,29 +69,7 @@ if(EQUAL(LIFE_SETTINGS(getNumber,"allow_medic_weapons"),0)) then
 		
 		sleep 2;
 
-		if ((FETCH_CONST(life_coplevel)) == 0) then {
-			player setObjectTextureGlobal [0, "textures\medic_notarzt.paa"];
-		};
-		
-		if ((FETCH_CONST(life_coplevel)) == 1) then {
-			player setObjectTextureGlobal [0, "textures\medic_notarzt.paa"];
-		};
-
-		if ((FETCH_CONST(life_coplevel)) == 2) then {
-			player setObjectTextureGlobal [0, "textures\medic_notarzt.paa"];
-		};
-
-		if ((FETCH_CONST(life_coplevel)) == 3) then {
-			player setObjectTextureGlobal [0, "textures\medic_notarzt.paa"];
-		};
-
-		if ((FETCH_CONST(life_coplevel)) == 4) then {
-			player setObjectTextureGlobal [0, "textures\medic_notarzt.paa"];
-		};
-
-		if ((FETCH_CONST(life_coplevel)) == 5) then {
-			player setObjectTextureGlobal [0, "textures\medic_notarzt.paa"];
-		};
+		player setObjectTextureGlobal [0, "textures\notarzt.paa"];
 
 		waitUntil {uniform player != "U_C_Scientist"};
 	};
