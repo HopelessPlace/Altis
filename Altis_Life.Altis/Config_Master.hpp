@@ -22,10 +22,13 @@ class Life_Settings {
     /* Medic related settings*/
     allow_medic_weapons = false; // true allows medics to hold/use weapons - false disallows
 	
-	allow_medic_autohover = false;
-	
-	allow_medic_vehicle_thirdperson = false;
-	allow_medic_player_thirdperson = false;
+	//
+	// if you set these values to false then three additional vms with while(true) will be spawned on the clients running arma3
+	// be aware that it can induce load on the client of the player who is playing the medic
+	//
+	allow_medic_autohover = true;
+	allow_medic_vehicle_thirdperson = true;
+	allow_medic_player_thirdperson = true;
 	
     /* Revive system settings */
     revive_cops = false; //true to enable cops the ability to revive everyone or false for only medics/ems.
