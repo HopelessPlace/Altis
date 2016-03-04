@@ -3,7 +3,11 @@
 //
 // DO NOT TOUCH IT. YOUR CHANGES WILL BE OVERWRITTEN.
 //
-// IF YOU NEED TO ADD STUFF TO THIS FILE THEN EDIT mission.sqm.skel.txt
+// IF YOU NEED TO ADD STUFF TO THIS FILE THEN EDIT THIS FILE:
+//
+// Altis/mission_sqm_script/configs/mission.sqm.skel.txt
+//
+// There are more files in this directory, you can add groups, markers, etc
 //
 
 version=12;
@@ -28,11 +32,11 @@ class Mission {
 		forecastWindDir=360;
 		wavesForced=1;
 		windForced=1;
-		year=2035;
-		month=7;
+		year=2077;
+		month=2;
 		day=6;
-		hour=20;
-		minute=0;
+		hour=6;
+		minute=24;
 		startFogDecay=0.0049333;
 		forecastFogDecay=0.0049333;
 	};
@@ -95,7 +99,7 @@ class Intro
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2035;
+		year=2077;
 		month=7;
 		day=6;
 		hour=14;
@@ -130,7 +134,7 @@ class OutroWin
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2035;
+		year=2077;
 		month=7;
 		day=6;
 		hour=14;
@@ -165,7 +169,7 @@ class OutroLoose
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2035;
+		year=2077;
 		month=7;
 		day=6;
 		hour=14;
