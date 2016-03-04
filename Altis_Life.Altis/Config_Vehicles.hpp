@@ -41,6 +41,7 @@ class CarShops {
         side = "med";
         vehicles[] = {
             { "C_Offroad_01_F", 10000, { "" }, { "", "", -1 } },
+			{ "C_Van_01_box_F", 20000, { "" }, { "", "", -1 } },
             { "I_Truck_02_medical_F", 25000, { "" }, { "", "", -1 } },
             { "O_Truck_03_medical_F", 45000, { "" }, { "", "", -1 } },
             { "B_Truck_01_medical_F", 60000, { "" }, { "", "", -1 } }
@@ -50,8 +51,8 @@ class CarShops {
     class med_air_hs {
         side = "med";
         vehicles[] = {
-            { "B_Heli_Light_01_F", 50000, { "mAir" }, { "", "", -1 } },
-            { "O_Heli_Light_02_unarmed_F", 75000, { "mAir" }, { "", "", -1 } }
+            { "C_Heli_light_01_red_F", 5000, { "mAir" }, { "life_mediclevel", "SCALAR", 3 } },
+            { "O_Heli_Light_02_unarmed_F", 750000, { "mAir" }, { "life_mediclevel", "SCALAR", 4 } }
         };
     };
 
@@ -671,7 +672,11 @@ class LifeCfgVehicles {
             } },
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
-            } }
+            } },
+            { "RTW", "med", {
+                "textures\rtw_unterbau.paa",
+				"textures\rtw_aufbau.paa"
+            } }			
         };
     };
 
@@ -685,6 +690,19 @@ class LifeCfgVehicles {
             { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            } }
+        };
+    };
+
+    class C_Heli_light_01_red_F {
+        vItemSpace = 40;
+        storageFee[] = { 1000, 2000, 0, 0 };
+        garageSell[] = { 5000, 3000, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = {
+            { "ADAC", "med", {
+                "textures\adac_m900.paa"
             } }
         };
     };
@@ -737,9 +755,6 @@ class LifeCfgVehicles {
             } },
             { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
-            } },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
             } }
         };
     };
@@ -763,8 +778,8 @@ class LifeCfgVehicles {
             { "Desert Digi", "reb", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             } },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+            { "ADAC", "med", {
+                "textures\adac_orca.paa"
             } }
         };
     };

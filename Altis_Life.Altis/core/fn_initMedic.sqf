@@ -28,6 +28,55 @@ if(EQUAL(LIFE_SETTINGS(getNumber,"allow_medic_weapons"),0)) then
 };
 
 //
+// disable autohover if master config says so
+//
+if(EQUAL(LIFE_SETTINGS(getNumber,"allow_medic_autohover"),0)) then
+{
+	["disableAutohover", "onEachFrame", {
+		_vehicle = vehicle player;
+		if(isAutoHoverOn _vehicle) then {
+			player action ["autoHoverCancel", _vehicle];
+			
+			hint "Autohover disabled by server.";
+		}
+	}] call BIS_fnc_addStackedEventHandler;
+};
+
+//
+// Allow player switching to third person while being in a vehicle?
+//
+if(EQUAL(LIFE_SETTINGS(getNumber,"allow_medic_vehicle_thirdperson"),0)) then
+{
+	[] spawn {
+		while {true} do {
+			if(vehicle player != player) then {
+				player switchCamera "Internal";
+				sleep 1;
+			} else {
+				sleep 10;
+			};
+		};
+	};
+};
+
+//
+// Allow player switching to third person while being outside of a vehicle?
+//
+if(EQUAL(LIFE_SETTINGS(getNumber,"allow_medic_player_thirdperson"),0)) then
+{
+	[] spawn {
+		while {true} do {
+			if(vehicle player == player) then {
+				player switchCamera "Internal";
+				sleep 1;
+			} else {
+				sleep 10;
+			};
+		};
+	};
+};
+
+//
 // XOXO Rettungshelfer
 //
 [] spawn {
@@ -45,7 +94,7 @@ if(EQUAL(LIFE_SETTINGS(getNumber,"allow_medic_weapons"),0)) then
 		
 		sleep 2;
 
-		player setObjectTextureGlobal [0, "textures\rettungssanitater.paa"];
+		player setObjectTextureGlobal [0, "textures\rettungsassistent.paa"];
 
 		waitUntil {uniform player != "U_Rangemaster"};
 	};
