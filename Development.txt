@@ -1,0 +1,24 @@
+how to use github easily
+==
+right click project in git desktop, open in git shell.
+
+before you start working:
+
+# git pull origin master
+
+add your stuff:
+
+# git add -A
+
+commit locally
+
+# git commit -a
+
+(you need to enter a commit msg)
+
+upload to github
+
+# git push origin master
+
+The repo in windows is under Documents/GitHub/Altis
+
