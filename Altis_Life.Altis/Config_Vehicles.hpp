@@ -436,7 +436,7 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } },
             { "Police", "cop", {
-                "\textures\poloffroad.paa"
+                "textures\poloffroad.paa"
             } }
         };
     };
@@ -519,7 +519,7 @@ class LifeCfgVehicles {
                 "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
             } },
             { "Polizei", "cop", {
-                "\textures\cop_quad.paa"
+                "textures\cop_quad.paa"
             } },
             { "Digi Desert", "reb", {
                 "\A3\Soft_F\Quadbike_01\Data\quadbike_01_opfor_co.paa"
@@ -642,7 +642,7 @@ class LifeCfgVehicles {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             } },
             { "Spongbob", "civ", {
-                "\textures\spongbob_suv.paa"
+                "textures\spongbob_suv.paa"
             } },
             { "Police", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
