@@ -1,8 +1,5 @@
 
-BAUPROJEKT1 = ../Bauprojekte/Rebellen/Drimea/Checkpoint/mission.sqm.2d.txt
 BAUPROJEKT2 = ../Bauprojekte/Feuerwehr/Athira/Krankenhaus/mission.sqm
-
-# BAUPROJEKTE = $(BAUPROJEKT1) $(BAUPROJEKT2)
 
 BAUPROJEKTE = $(BAUPROJEKT2)
 
@@ -11,7 +8,7 @@ FIRST_ID_CLASS_VEHICLES = 236
 all: bauprojekte merge
 
 bauprojekte:
-	./bin/slice.sh ../Bauprojekte/Feuerwehr/Athira/Krankenhaus/mission.sqm > tmp/Feuerwehr_Athira_Krankenhaus.txt
+	./bin/slice.sh $(BAUPROJEKT2) | tee tmp/Feuerwehr_Athira_Krankenhaus.txt
 
 merge:
 	@bin/glue.py \
