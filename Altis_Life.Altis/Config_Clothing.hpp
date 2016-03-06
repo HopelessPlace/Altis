@@ -56,7 +56,8 @@ class Clothing {
             { "H_Cap_grn_BI", "", 150, { "", "", -1 } },
             { "H_Cap_oli", "", 150, { "", "", -1 } },
             { "H_Cap_red", "", 150, { "", "", -1 } },
-            { "H_Cap_tan", "", 150, { "", "", -1 } }
+            { "H_Cap_tan", "", 150, { "", "", -1 } },
+            { "H_Cap_press", "Presse", 150, { "", "", -1 } }
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
