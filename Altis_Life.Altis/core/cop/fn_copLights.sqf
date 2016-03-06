@@ -107,20 +107,20 @@ _lightright setLightUseFlare true;
 _lightleft setLightDayLight true;
 _lightright setLightDayLight true;
 
-_leftRed = true;  
+_leftBlue = true;  
 while{ (alive _vehicle)} do  
 {  
 	if(!(_vehicle getVariable "lights")) exitWith {};
-	if(_leftRed) then  
+	if(_leftBlue) then  
 	{  
-		_leftRed = false;  
+		_leftBlue = false;  
 		_lightright setLightBrightness 0.0;  
 		sleep 0.05;
 		_lightleft setLightBrightness 6;  
 	}  
 		else  
 	{  
-		_leftRed = true;  
+		_leftBlue = true;  
 		_lightleft setLightBrightness 0.0;  
 		sleep 0.05;
 		_lightright setLightBrightness 6;  
