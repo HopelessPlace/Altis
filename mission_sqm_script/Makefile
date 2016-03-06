@@ -1,13 +1,15 @@
+BAUPROJEKT1 = ../Bauprojekte/Zivilisten/Athira/Markt/mission.sqm
 
 BAUPROJEKT2 = ../Bauprojekte/Feuerwehr/Athira/Krankenhaus/mission.sqm
 
-BAUPROJEKTE = $(BAUPROJEKT2)
+BAUPROJEKTE = $(BAUPROJEKT1) $(BAUPROJEKT2)
 
 FIRST_ID_CLASS_VEHICLES = 236
 
 all: bauprojekte merge
 
 bauprojekte:
+	./bin/slice.sh $(BAUPROJEKT1) | tee tmp/Zivilisten_Athira_Markt.txt
 	./bin/slice.sh $(BAUPROJEKT2) | tee tmp/Feuerwehr_Athira_Krankenhaus.txt
 
 merge:
