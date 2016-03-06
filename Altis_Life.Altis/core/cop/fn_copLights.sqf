@@ -63,9 +63,9 @@ switch (typeOf _vehicle) do
 };
 
 _lightleft setLightAttenuation [0.181, 0, 1000, 130]; 
-_lightleft setLightIntensity 10;
-_lightleft setLightFlareSize 0.38;
-_lightleft setLightFlareMaxDistance 150;
+_lightleft setLightIntensity 20;
+_lightleft setLightFlareSize 0.50;
+_lightleft setLightFlareMaxDistance 300;
 _lightleft setLightUseFlare true;
 
 _lightright = "#lightpoint" createVehicle getpos _vehicle;   
@@ -117,9 +117,9 @@ switch (typeOf _vehicle) do
 };
   
 _lightright setLightAttenuation [0.181, 0, 1000, 130]; 
-_lightright setLightIntensity 10;
-_lightright setLightFlareSize 0.38;
-_lightright setLightFlareMaxDistance 150;
+_lightright setLightIntensity 20;
+_lightright setLightFlareSize 0.50;
+_lightright setLightFlareMaxDistance 300;
 _lightright setLightUseFlare true;
 
 //ARE YOU ALL HAPPY?!?!?!?!?!?!?!?!?%#?@WGD?TGD?BN?ZDHBFD?GA
