@@ -287,3 +287,6 @@ _toSpawn = "B_MRAP_01_hmg_F" createVehicle position player;
 
 player addVest "V_TacVest_blk_POLICE"; player addUniform "U_Marshal";   _weapon = [player, "srifle_DMR_03_DMS_F", 6]  call BIS_fnc_addWeapon;   player addHeadgear "H_Beret_blk";   player addGoggles "G_Tactical_Clear";    player addBackpack "B_Bergen_blk";  player addItem "ItemGPS";  player addItem "NVGoggles_OPFOR";  player addItem "Rangefinder";  player addItem "optic_LRPS"; player addItem "bipod_01_F_blk"
 
+
+
+life_thirst = 100; life_hunger = 100; player setDamage 0; onmapsingleclick "vehicle player setpos _pos";   player addVest "V_TacVest_blk_POLICE";   player addUniform "U_Marshal";   _weapon = [player, "srifle_DMR_03_DMS_F", 10]  call BIS_fnc_addWeapon;   player addHeadgear "H_Beret_blk";   player addGoggles "G_Tactical_Clear";    player addBackpack "B_Bergen_blk";  player addItem "ItemGPS";  player addItem "NVGoggles_OPFOR";  player addItem "Rangefinder";    _toSpawn = "B_Truck_01_box_F" createVehicle position player;   
