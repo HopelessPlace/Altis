@@ -23,8 +23,9 @@ switch (typeOf _vehicle) do
 {
 	case "B_Quadbike_01_F":
 	{
-		_lightleft lightAttachObject [_vehicle, [-0.07, 0.0, -0.07]];
+		_lightleft lightAttachObject [_vehicle, [-0.07, 1, -0.07]];
 	};
+	
 	case "C_Offroad_01_F":
 	{
 		_lightleft lightAttachObject [_vehicle, [-0.37, 0.0, 0.56]];
@@ -54,6 +55,11 @@ switch (typeOf _vehicle) do
 	{			
 		_lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
  	};
+ 	
+ 	case "C_Van_01_box_F":
+	{			
+		_lightleft lightAttachObject [_vehicle, [-0.72, -0.2, 1.495]];
+ 	};
 };
 
 _lightleft setLightAttenuation [0.181, 0, 1000, 130]; 
@@ -72,7 +78,7 @@ switch (typeOf _vehicle) do
 {
 	case "B_Quadbike_01_F":
 	{
-		_lightleft lightAttachObject [_vehicle, [-0.07, 0.0, -0.07]];
+		_lightleft lightAttachObject [_vehicle, [0.07, 1, -0.7]];
 	};
 	case "C_Offroad_01_F":
 	{
@@ -102,6 +108,11 @@ switch (typeOf _vehicle) do
 	case "B_Heli_Transport_01_F":
 	{			
 		_lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+ 	};
+ 	
+ 	case "C_Van_01_box_F":
+	{			
+		_lightleft lightAttachObject [_vehicle, [0.72, -0.2, 1.495]];
  	};
 };
   
