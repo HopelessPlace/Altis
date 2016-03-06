@@ -1,4 +1,3 @@
-disableRandomization[] = {"C_Heli_light_01_red_F"};
 author = "Tonic";
 loadScreen = "skins\logo.jpg";
 joinUnassigned = 1;
