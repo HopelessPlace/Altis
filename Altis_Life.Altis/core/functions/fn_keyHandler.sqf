@@ -162,13 +162,22 @@ switch (_code) do {
 		//If cop run checks for turning lights on.
 		if(_shift && playerSide in [west,independent]) then {
 			if(vehicle player != player && (typeOf vehicle player) in ["B_Quadbike_01_F","B_MRAP_01_F","C_Offroad_01_F","B_Truck_01_medical_F","B_Truck_01_mover_F","B_Truck_01_covered_F","B_Truck_01_transport_F","C_Van_01_box_F","C_Offroad_01_repair_F","C_SUV_01_F","C_Heli_Light_01_civil_F","C_Hatchback_01_sport_F","B_MRAP_01_F","I_MRAP_03_F","O_MRAP_02_F","B_Heli_Light_01_F","B_Heli_Transport_03_unarmed_F","I_Heli_light_03_unarmed_F","B_Heli_Transport_01_F","B_Heli_Transport_01_F"]) then {
+
+				if(isNil {vehicle player GVAR "lights"}) then {
+					vehicle setVariable["lights",FALSE,TRUE];
+				};
+
 				if(!isNil {vehicle player GVAR "lights"}) then {
+					hint "vehicle player GVAR lights OK";
+				
 					if(playerSide == west) then {
 						[vehicle player] call life_fnc_sirenLights;
 					} else {
 						[vehicle player] call life_fnc_medicSirenLights;
 					};
 					_handled = true;
+				} else {
+					hint "vehicle player GVAR lights NIL";
 				};
 			};
 		};
