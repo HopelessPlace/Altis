@@ -6,16 +6,16 @@
 	Description:
 	Adds the light effect to cop vehicles, specifically the offroad.
 */
-Private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRed"];
+Private ["_vehicle","_lightBlue","_lightBlue","_lightleft","_lightright","_leftBlue"];
 _vehicle = _this select 0;
 	
 if(isNil "_vehicle" OR isNull _vehicle OR !(_vehicle getVariable "lights")) exitWith {};
-_lightRed = [20, 0.1, 0.1];
+_lightBlue = [20, 0.1, 0.1];
 _lightBlue = [0.1, 0.1, 20];
 
 _lightleft = "#lightpoint" createVehicle getpos _vehicle;   
 sleep 0.2;
-_lightleft setLightColor _lightRed; 
+_lightleft setLightColor _lightBlue; 
 _lightleft setLightBrightness 0.2;  
 _lightleft setLightAmbient [0.1,0.1,1];
 
