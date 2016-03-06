@@ -76,6 +76,7 @@ class Clothing {
         };
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } }
+            { "V_Press_F", "Presse", 10000, { "", "", -1 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
@@ -114,15 +115,16 @@ class Clothing {
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_Rangemaster", "Dienstanzug", 2500, { "", "", -1 } },
-            { "U_B_CombatUniform_mcam_worn", "Kampfanzug", 500000, { "life_coplevel", "SCALAR", 4 } }
+            { "U_B_CombatUniform_mcam_worn", "Kampfanzug", 50000, { "life_coplevel", "SCALAR", 4 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
+            { "H_Cap_police", "Polizei Cap", 50, { "", "", -1 } },
             { "H_HelmetB_plain_mcamo", "", 75, { "life_coplevel", "SCALAR", 1 } },
             { "H_Booniehat_mcamo", "", 120, { "life_coplevel", "SCALAR", 1 } },
             { "H_MilCap_mcamo", "", 100, { "life_coplevel", "SCALAR", 2 } },
-			{ "H_Beret_Colonel", "MEK Einsatzleiter", 100, { "life_coplevel", "SCALAR", 5 } },
-			{ "H_Beret_blk_POLICE", "MEK", 100, { "life_coplevel", "SCALAR", 3 } },
+	    { "H_Beret_Colonel", "MEK Einsatzleiter", 100, { "life_coplevel", "SCALAR", 6 } },
+	    { "H_Beret_blk_POLICE", "MEK", 100, { "life_coplevel", "SCALAR", 5 } }
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
@@ -143,7 +145,8 @@ class Clothing {
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
             { "V_Rangemaster_belt", "", 800, { "", "", -1 } },
-            { "V_PlateCarrier2_rgr", "", 1500, { "life_coplevel", "SCALAR", 1 } }
+            { "V_TacVest_blk_POLICE", "", 1500, { "life_coplevel", "SCALAR", 2 } },
+            { "V_PlateCarrier2_rgr", "", 15500, { "life_coplevel", "SCALAR", 6 } }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
