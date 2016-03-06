@@ -15,7 +15,7 @@ _sun = (sunOrMoon < 1);
 
 if (isNil "_veh" || isNull _veh || !(_veh getVariable "lights")) exitWith {};
 
-_lightRed = [255, 0, 0];
+_lightRed = [0, 0, 255];
 _lightWhite = [255, 255, 255];
 _lightBlue = [0, 0, 255];
 
