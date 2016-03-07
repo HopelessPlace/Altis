@@ -131,7 +131,7 @@ if(EQUAL(SEL(_vInfo,1),"cop") && (SEL(_vInfo,2)) in ["B_Quadbike_01_F","C_Offroa
 	[_vehicle,"cop_offroad",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 
-if(EQUAL(SEL(_vInfo,1),"med") && EQUAL(SEL(_vInfo,2),"B_Quadbike_01_F","C_Offroad_01_F","B_Truck_01_medical_F","B_Truck_01_mover_F","B_Truck_01_covered_F","B_Truck_01_transport_F","C_Van_01_box_F","C_Offroad_01_repair_F","C_SUV_01_F","C_Heli_Light_01_civil_F","C_Hatchback_01_sport_F","B_MRAP_01_F","I_MRAP_03_F","O_MRAP_02_F","B_Heli_Light_01_F","B_Heli_Transport_03_unarmed_F","I_Heli_light_03_unarmed_F","B_Heli_Transport_01_F","B_Heli_Transport_01_F")) then {
+if(EQUAL(SEL(_vInfo,1),"med") && (SEL(_vInfo,2)) in ["B_Quadbike_01_F","C_Offroad_01_F","B_Truck_01_medical_F","B_Truck_01_mover_F","B_Truck_01_covered_F","B_Truck_01_transport_F","C_Van_01_box_F","C_Offroad_01_repair_F","C_SUV_01_F","C_Heli_Light_01_civil_F","C_Hatchback_01_sport_F","B_MRAP_01_F","I_MRAP_03_F","O_MRAP_02_F","B_Heli_Light_01_F","B_Heli_Transport_03_unarmed_F","I_Heli_light_03_unarmed_F","B_Heli_Transport_01_F","B_Heli_Transport_01_F"]) then {
 	[_vehicle,"med_offroad",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 [1,"Your vehicle is ready!"] remoteExecCall ["life_fnc_broadcast",_unit];
