@@ -44,7 +44,6 @@ class WeaponShops {
         items[] = {
             { "arifle_TRG20_F", "", 25000, 2500 },
             { "arifle_Katiba_F", "", 30000, 5000 },
-            { "srifle_DMR_01_F", "", 50000, -1 },
             { "arifle_SDAR_F", "", 20000, 7500 },
             { "optic_ACO_grn", "", 3500, 350 },
             { "optic_Holosight", "", 3600, 275 },
@@ -54,7 +53,6 @@ class WeaponShops {
         mags[] = {
             { "30Rnd_556x45_Stanag", "", 300 },
             { "30Rnd_65x39_caseless_green", "", 275 },
-            { "10Rnd_762x54_Mag", "", 500 },
             { "20Rnd_556x45_UW_mag", "", 125 }
         };
     };
@@ -65,13 +63,23 @@ class WeaponShops {
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
+            { "srifle_DMR_01_F", "", 140000, 20000 },
+            { "srifle_EBR_F", "", 200000, 30000 },
+            { "LMG_Mk200_F", "", 150000, 25000 },
             { "hgun_Rook40_F", "", 1500, 500 },
             { "hgun_Pistol_heavy_02_F", "", 2500, -1 },
             { "hgun_ACPC2_F", "", 4500, -1 },
             { "hgun_PDW2000_F", "", 9500, -1 },
+            { "muzzle_snds_B", "", 25000, 250 },
+            { "optic_LRPS", "", 25000, 250 },
+            { "optic_MRCO", "", 15000, 250 },
+            { "optic_Hamr", "", 10000, 250 },
             { "optic_ACO_grn_smg", "", 950, 250 }
         };
         mags[] = {
+            { "10Rnd_762x54_Mag", "", 12000 },
+            { "20Rnd_762x51_Mag", "", 20000 },
+            { "200Rnd_65x39_cased_Box_Tracer", "", 50000 },
             { "16Rnd_9x21_Mag", "", 25 },
             { "6Rnd_45ACP_Cylinder", "", 50 },
             { "9Rnd_45ACP_Mag", "", 45 },
