@@ -51,5 +51,5 @@ rm -vf life_server.pbo*
 
 sync
 
-"${FILEZILLA}" --site="0/steam midocloud.de" --local="D:\\CYGWIN_RELEASES\\${RELEASE}\\${DATESTAMP}"
+"${FILEZILLA}" --site="0/altislife" --local="D:\\CYGWIN_RELEASES\\${RELEASE}\\${DATESTAMP}"
 
