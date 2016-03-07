@@ -176,4 +176,18 @@ class CfgNotifications
 		duration = 10;
 		priority = 5;
 	};
+	
+	class empwarn
+	{
+    		name = "empwarn";
+    		sound[] = {"\sounds\empwarn.ogg", 1.0, 1};
+    		titles[] = {};
+  	};
+  	
+  	class empacsound
+  	{
+    	name = "empacsound";
+    	sound[] = {"sounds\empac.ogg", db-5, 1};
+    	titles[] = {};
+  	};
 };
