@@ -94,7 +94,7 @@ if(EQUAL(LIFE_SETTINGS(getNumber,"allow_medic_player_thirdperson"),0)) then
 		
 		sleep 2;
 
-		player setObjectTextureGlobal [0, "textures\rettungsassistent.paa"];
+		player setObjectTextureGlobal [0, "textures\rettungshelfer.paa"];
 
 		waitUntil {uniform player != "U_Rangemaster"};
 	};
