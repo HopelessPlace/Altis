@@ -1769,33 +1769,39 @@
 		//
 		class Item221
 		{
-			position[]={14274.115,25.475761,18612.9};
+			position[]={14281.154,26.153936,18628.705};
 			name="hospital_4";
 			text="@STR_MAR_General_Hospital";
-			markerType="RECTANGLE";
 			type="loc_Hospital";
 			colorName="ColorRed";
-			a=22;
-			b=22;
-			angle=45;
+			a=1.5;
+			b=1.5;
 		};
 		class Item222
 		{
 			position[]={14311.871,26.84133,18606.395};
+			name="medic_spawn_4_heli";
+			type="Empty";
+			angle=150;
+		};
+		
+		class Item223
+		{
+			position[]={14254.45,24.790182,18587.256};
 			name="medic_spawn_4";
 			type="Empty";
 			angle=150;
 		};
-		class Item223
+		class Item224
 		{
-			position[]={14253.016,25.820293,18634.57};
+			position[]={14273.979,25.201748,18585.807};
 			name="med_car_4_1";
 			type="Empty";
 			angle=120;
 		};
-		class Item224
+		class Item225
 		{
-			position[]={14270.318,26.374966,18654.164};
+			position[]={14286.269,25.281425,18584.742};
 			name="med_car_4_2";
 			type="Empty";
 			angle=120;
@@ -1804,4 +1810,4 @@
 		//
 		// XOXO Class Marker Item Counter
 		//
-		items=225;
+		items=226;

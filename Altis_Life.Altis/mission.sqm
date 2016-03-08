@@ -3349,17 +3349,17 @@ class Mission {
 				//
 				class Item110
 				{
-					position[]={14270.376,26.174669,18642.711};
+					position[]={14265.592,25.128391,18586.123};
 					azimut=120;
 					offsetY=5;
 					special="NONE";
-					id=236;
+					id=207;
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide == independent ']; this addAction[localize""STR_MAR_EMS_Item_Shop"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[localize""STR_MAR_EMS_Clothing_Shop"",life_fnc_clothingMenu,""med_clothing""]; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,[""med_car_4_1"",""med_car_4_2""],""med"",""Athira General Hospital""]]; this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_4"",""med"",""Athira General Hospital""]]; this addAction[localize""STR_MAR_W_Car_Garage"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = [""med_car_4_1"",""med_car_4_2""]; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent']; this addAction[localize""STR_MAR_Helicopter_Garage"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_spawn_4""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent ']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\medic_uniform.jpg""]; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""med_market""]; this addAction[localize""STR_MAR_Medical_Assistance"",life_fnc_healHospital]; ";
-				};				
+					init="this enableSimulation false; this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide == independent ']; this addAction[localize""STR_MAR_EMS_Item_Shop"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[localize""STR_MAR_EMS_Clothing_Shop"",life_fnc_clothingMenu,""med_clothing""]; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_4_1"",""med"",""Athira General Hospital""]]; this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_4_heli"",""med"",""Athira General Hospital""]]; this addAction[localize""STR_MAR_W_Car_Garage"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_4_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent']; this addAction[localize""STR_MAR_Helicopter_Garage"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_spawn_4_heli""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent ']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\medic_uniform.jpg""]; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""med_market""]; this addAction[localize""STR_MAR_Medical_Assistance"",life_fnc_healHospital]; ";
+				};			
 
 				//
 				// XOXO Class Group class Item79 class Vehicles Item Counter
@@ -13477,33 +13477,39 @@ class Mission {
 		//
 		class Item221
 		{
-			position[]={14274.115,25.475761,18612.9};
+			position[]={14281.154,26.153936,18628.705};
 			name="hospital_4";
 			text="@STR_MAR_General_Hospital";
-			markerType="RECTANGLE";
 			type="loc_Hospital";
 			colorName="ColorRed";
-			a=22;
-			b=22;
-			angle=45;
+			a=1.5;
+			b=1.5;
 		};
 		class Item222
 		{
 			position[]={14311.871,26.84133,18606.395};
+			name="medic_spawn_4_heli";
+			type="Empty";
+			angle=150;
+		};
+		
+		class Item223
+		{
+			position[]={14254.45,24.790182,18587.256};
 			name="medic_spawn_4";
 			type="Empty";
 			angle=150;
 		};
-		class Item223
+		class Item224
 		{
-			position[]={14253.016,25.820293,18634.57};
+			position[]={14273.979,25.201748,18585.807};
 			name="med_car_4_1";
 			type="Empty";
 			angle=120;
 		};
-		class Item224
+		class Item225
 		{
-			position[]={14270.318,26.374966,18654.164};
+			position[]={14286.269,25.281425,18584.742};
 			name="med_car_4_2";
 			type="Empty";
 			angle=120;
@@ -13512,7 +13518,7 @@ class Mission {
 		//
 		// XOXO Class Marker Item Counter
 		//
-		items=225;
+		items=226;
 	};
 };
 
