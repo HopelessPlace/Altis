@@ -12,4 +12,4 @@
 @pause
 
 @copy _xcamProjects.ini "%PROGRAMFILES(x86)%\Steam\steamapps\common\Arma 3\@inidbi\db\xCam\Library_Pro\_xCamProjects.ini"
-@copy Altis_CheckpointDrimea.ini "%PROGRAMFILES(x86)%\Steam\steamapps\common\Arma 3\@inidbi\db\xCam\Library_Pro\Altis_Thronos.ini"
+@copy Altis_Thronos.ini "%PROGRAMFILES(x86)%\Steam\steamapps\common\Arma 3\@inidbi\db\xCam\Library_Pro\Altis_Thronos.ini"
