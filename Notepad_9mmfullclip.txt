@@ -294,3 +294,5 @@ life_thirst = 100; life_hunger = 100; player setDamage 0; onmapsingleclick "vehi
 
 http://www.altisliferpg.com/topic/9620-emergency-lighting-system-and-sirens/
 
+_toSpawn = "B_Rangemaster_F" createVehicle position player;
+

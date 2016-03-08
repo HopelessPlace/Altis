@@ -3289,9 +3289,11 @@
 				//
 				// Athira General Hospital
 				//
+				// this setPosATL [14267.111,18641.656,1.5];
+				//
 				class Item110
-				{
-					position[]={14267.111,26.243948,18641.656};
+				{				
+					position[]={14267.111,1.5,18641.656};
 					azimut=120;
 					id=207;
 					side="WEST";

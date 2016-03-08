@@ -1786,21 +1786,21 @@
 		};
 		class Item223
 		{
-			position[]={14240.257,26.550716,18653.885};
+			position[]={14246.432,26.076374,18643.309};
 			name="medic_spawn_4";
 			type="Empty";
 			angle=150;
 		};
 		class Item224
 		{
-			position[]={14243.936,25.973511,18640.469};
+			position[]={14254.568,25.810299,18632.244};
 			name="med_car_4_1";
 			type="Empty";
 			angle=120;
 		};
 		class Item225
 		{
-			position[]={14254.728,26.93852,18665.213};
+			position[]={14272.669,26.288374,18652.789};
 			name="med_car_4_2";
 			type="Empty";
 			angle=120;
