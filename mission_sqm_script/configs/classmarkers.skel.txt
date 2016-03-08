@@ -1763,8 +1763,45 @@
 			type="Empty";
 			angle=-74.833801;
 		};
-		
+
+		//
+		// Athira General Hospital
+		//
+		class Item221
+		{
+			position[]={14274.115,25.475761,18612.9};
+			name="hospital_4";
+			text="@STR_MAR_General_Hospital";
+			markerType="RECTANGLE";
+			type="loc_Hospital";
+			colorName="ColorRed";
+			a=22;
+			b=22;
+			angle=45;
+		};
+		class Item222
+		{
+			position[]={14311.871,26.84133,18606.395};
+			name="medic_spawn_4";
+			type="Empty";
+			angle=150;
+		};
+		class Item223
+		{
+			position[]={14253.016,25.820293,18634.57};
+			name="med_car_4_1";
+			type="Empty";
+			angle=120;
+		};
+		class Item224
+		{
+			position[]={14270.318,26.374966,18654.164};
+			name="med_car_4_2";
+			type="Empty";
+			angle=120;
+		};
+
 		//
 		// XOXO Class Marker Item Counter
 		//
-		items=221;
+		items=225;
