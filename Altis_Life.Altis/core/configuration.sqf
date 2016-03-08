@@ -43,6 +43,8 @@ life_disable_getIn = false;
 life_disable_getOut = false;
 nn_last_vehicles = [];
 nn_empInUse = false;
+life_last_vehicles = [];
+life_empInUse = false;
 
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
 life_clothing_purchase = [-1,-1,-1,-1,-1];
