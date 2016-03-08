@@ -442,7 +442,7 @@ class LifeCfgVehicles {
             } },
             { "NEF", "med", {
               "textures\nef_offroad.paa",
-              "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE02_CO.paa"
+              "textures\nef_offroad.paa"
             } }
         };
     };
