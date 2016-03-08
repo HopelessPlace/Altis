@@ -38,12 +38,8 @@ player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 		//
 		// (backpackContainer player) setObjectTextureGlobal [0, "#(rgb,0,0,0)color(0,0,0,0)"];
 		//
-
-		sleep 2;
 		
 		player setObjectTextureGlobal [0, "#(rgb,8,8,3)color(1,0,0,0)"];
-		
-		sleep 2;
 		
 		if ((FETCH_CONST(life_coplevel)) == 0) then {
 			player setObjectTextureGlobal [0, "textures\Cop_Uniform_1.paa"];
@@ -93,13 +89,9 @@ player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 		//
 		// (backpackContainer player) setObjectTextureGlobal [0, "#(rgb,0,0,0)color(0,0,0,0)"];
 		//
-
-		sleep 2;
 		
 		player setObjectTextureGlobal [0, "#(rgb,8,8,3)color(1,0,0,0)"];
-		
-		sleep 2;
-		
+
 		if ((FETCH_CONST(life_coplevel)) == 0) then {
 			player setObjectTextureGlobal [0, "textures\Cop_MEK_Uniform.paa"];
 		};
