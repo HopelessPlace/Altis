@@ -1769,7 +1769,7 @@
 		//
 		class Item221
 		{
-			position[]={14281.154,26.153936,18628.705};
+			position[]={14265.574,25.194223,18593.623};
 			name="hospital_4";
 			text="@STR_MAR_General_Hospital";
 			type="loc_Hospital";
@@ -1784,24 +1784,23 @@
 			type="Empty";
 			angle=150;
 		};
-		
 		class Item223
 		{
-			position[]={14254.45,24.790182,18587.256};
+			position[]={14240.257,26.550716,18653.885};
 			name="medic_spawn_4";
 			type="Empty";
 			angle=150;
 		};
 		class Item224
 		{
-			position[]={14273.979,25.201748,18585.807};
+			position[]={14243.936,25.973511,18640.469};
 			name="med_car_4_1";
 			type="Empty";
 			angle=120;
 		};
 		class Item225
 		{
-			position[]={14286.269,25.281425,18584.742};
+			position[]={14254.728,26.93852,18665.213};
 			name="med_car_4_2";
 			type="Empty";
 			angle=120;
