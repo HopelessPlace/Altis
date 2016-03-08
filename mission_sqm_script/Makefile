@@ -9,16 +9,21 @@ FIRST_ID_CLASS_VEHICLES = 236
 all: bauprojekte Lampen_einschalten merge
 
 bauprojekte:
-	./bin/slice.sh $(BAUPROJEKT1) | tee tmp/Zivilisten_Athira_Markt.txt
-	./bin/slice.sh $(BAUPROJEKT2) | tee tmp/Feuerwehr_Athira_Krankenhaus.txt
-	./bin/slice.sh $(BAUPROJEKT3) | tee tmp/Rebellen_Drimea_Checkpoint.txt
+	cat bin/slice.sh | tr -d '\r' | tee bin/.slice_CRLF_sucks.sh
+	chmod 0755 bin/.slice_CRLF_sucks.sh
+	./bin/.slice_CRLF_sucks.sh $(BAUPROJEKT1) | tee tmp/Zivilisten_Athira_Markt.txt
+	./bin/.slice_CRLF_sucks.sh $(BAUPROJEKT2) | tee tmp/Feuerwehr_Athira_Krankenhaus.txt
+	./bin/.slice_CRLF_sucks.sh $(BAUPROJEKT3) | tee tmp/Rebellen_Drimea_Checkpoint.txt
 
 Lampen_einschalten:
-	./bin/lamps.sh tmp/Zivilisten_Athira_Markt.txt | tee tmp2/Zivilisten_Athira_Markt.txt
-	./bin/lamps.sh tmp/Feuerwehr_Athira_Krankenhaus.txt | tee tmp2/Feuerwehr_Athira_Krankenhaus.txt
-	./bin/lamps.sh tmp/Rebellen_Drimea_Checkpoint.txt | tee tmp2/Rebellen_Drimea_Checkpoint.txt
+	cat bin/lamps.sh | tr -d '\r' | tee bin/.lamps_CRLF_sucks.sh
+	chmod 0755 bin/.lamps_CRLF_sucks.sh
+	./bin/.lamps_CRLF_sucks.sh tmp/Zivilisten_Athira_Markt.txt | tee tmp2/Zivilisten_Athira_Markt.txt
+	./bin/.lamps_CRLF_sucks.sh tmp/Feuerwehr_Athira_Krankenhaus.txt | tee tmp2/Feuerwehr_Athira_Krankenhaus.txt
+	./bin/.lamps_CRLF_sucks.sh tmp/Rebellen_Drimea_Checkpoint.txt | tee tmp2/Rebellen_Drimea_Checkpoint.txt
 
 merge:
+	@chmod 0755 bin/glue.py
 	@bin/glue.py \
 		"configs/mission.sqm.skel.txt" \
 		"configs/addOns.skel.txt" \
