@@ -15,8 +15,10 @@ switch (playerSide) do {
 	};
 	
 	case west: {
-	// nano EMP Little Bird
+		// nano EMP Little Bird
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>EMP Operator Konsole öffnen</t>",life_fnc_openEmpMenu,[],8,false,false,"",'[_this] call life_fnc_isEmpOperator']];
+		//Seize Objects
+        	life_actions = life_actions + [player addAction["Waffe beschlagnahmen",life_fnc_seizeObjects,cursorTarget,0,false,false,"",'count(nearestObjects [player,["weaponholder"],3])>0']];
 	};
 };
 
