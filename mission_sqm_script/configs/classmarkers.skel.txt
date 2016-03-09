@@ -1795,6 +1795,7 @@
 			position[]={14289.247,27.842,18682.570};
 			name="medic_spawn_4";
 			type="Empty";
+			angle=0;
 		};
 		//
 		// across the street
@@ -1822,6 +1823,7 @@
 			position[]={14264.526,26.557,18657.156};
 			name="med_car_4_3";
 			type="Empty";
+			angle=100;
 		};
 		//
 		// vordere Garage
@@ -1831,6 +1833,7 @@
 			position[]={14246.522,25.839,18637.330};
 			name="med_car_4_4";
 			type="Empty";
+			angle=100;
 		};
 		class Item228
 		{
