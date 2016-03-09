@@ -3914,14 +3914,23 @@
 					skill=0.60000002;
 					init="  this enableSimulation false; this allowDamage false; removeVest this; removeHeadgear this; this addAction[localize""STR_MAR_Medical_Assistance"",life_fnc_healHospital]; waitUntil {uniform this == ""U_C_Scientist""}; this setObjectTextureGlobal [0,""textures\notarzt.paa""];  ";
 				};
-
+				
+				items=3;
+			};
+		};
+		
+		class Item107
+		{
+			side="CIV";
+			class Vehicles
+			{
 				//
 				// CIV NPC hintere Gyros Bude
 				//
-				class Item3
+				class Item0
 				{
 					position[]={14324.717,28.472,18696.304};
-					azimut=250;
+					azimut=80;
 					offsetY=0.2;
 					id=239;
 					side="CIV";
@@ -3930,14 +3939,23 @@
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market""];";
 				};
+				
+				items=1;
+			};
+		};
 
+		class Item108
+		{
+			side="CIV";
+			class Vehicles
+			{
 				//
 				// CIV NPC vordere Burger Bude
 				//
-				class Item4
+				class Item0
 				{
 					position[]={14279.698,25.305,18597.435};
-					azimut=150;
+					azimut=350;
 					offsetY=0.2;
 					id=240;
 					side="CIV";
@@ -3947,14 +3965,14 @@
 					init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market""];";
 				};
 				
-				items=5;
+				items=1;
 			};
 		};
 		
 		//
 		// XOXO Class Group Item Counter
 		//
-		items=107;
+		items=109;
 
 //
 // if you add content here make sure you increment the following number in the Makefile:
