@@ -6,7 +6,7 @@ BAUPROJEKT3 = ../Bauprojekte/Rebellen/Drimea/Checkpoint/mission.sqm
 
 BAUPROJEKT4 = ../Bauprojekte/Rebellen/Thronos/Base/mission.sqm
 
-FIRST_ID_CLASS_VEHICLES = 239
+FIRST_ID_CLASS_VEHICLES = 241
 
 all: bauprojekte Lampen_einschalten merge
 

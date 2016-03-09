@@ -1823,7 +1823,7 @@
 			position[]={14264.526,26.557,18657.156};
 			name="med_car_4_3";
 			type="Empty";
-			angle=100;
+			angle=120;
 		};
 		//
 		// vordere Garage
@@ -1833,7 +1833,7 @@
 			position[]={14246.522,25.839,18637.330};
 			name="med_car_4_4";
 			type="Empty";
-			angle=100;
+			angle=120;
 		};
 		class Item228
 		{
