@@ -1777,34 +1777,68 @@
 			a=1.5;
 			b=1.5;
 		};
+		//
+		// hopefully on the helipad on the roof. otherwise people will be very pissed.
+		//
 		class Item222
 		{
-			position[]={14311.871,26.84133,18606.395};
-			name="medic_spawn_4_heli";
+			position[]={14314.411,26.948,18610.833};
+			name="medic_spawn_4_heli_buy";
 			type="Empty";
-			angle=150;
+			angle=180;
 		};
+		//
+		// medic spawn Athira General Hospital (behind the building)
+		//
 		class Item223
 		{
-			position[]={14292.11,27.808163,18685.896};
+			position[]={14289.247,27.842,18682.570};
 			name="medic_spawn_4";
 			type="Empty";
-			angle=200;
 		};
+		//
+		// across the street
+		//
 		class Item224
 		{
-			position[]={14268.591,25.024553,18580.631};
+			position[]={14188.929,23.853,18572.478};
 			name="med_car_4_1";
 			type="Empty";
 		};
+		//
+		// across the street
+		//
 		class Item225
 		{
-			position[]={14259.175,24.788847,18580.652};
+			position[]={14293.161,23.007,18553.767};
 			name="med_car_4_2";
 			type="Empty";
 		};
-
+		//
+		// hintere Garage (von der Schranke aus gesehen)
+		//
+		class Item226
+		{
+			position[]={14264.526,26.557,18657.156};
+			name="med_car_4_3";
+			type="Empty";
+		};
+		//
+		// vordere Garage
+		//
+		class Item227
+		{
+			position[]={14246.522,25.839,18637.330};
+			name="med_car_4_4";
+			type="Empty";
+		};
+		class Item228
+		{
+			position[]={14368.237,27.782,18635.626};
+			name="medic_spawn_4_heli_garage";
+			type="Empty";
+		};
 		//
 		// XOXO Class Marker Item Counter
 		//
-		items=226;
+		items=229;
