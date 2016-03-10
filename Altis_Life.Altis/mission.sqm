@@ -3469,7 +3469,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_1";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3489,7 +3489,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_2";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3509,7 +3509,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_3";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3529,7 +3529,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_04";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3549,7 +3549,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_06";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3570,7 +3570,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_07";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3590,7 +3590,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_08";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3610,7 +3610,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_09";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3630,7 +3630,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_10";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3650,7 +3650,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_11";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3670,7 +3670,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_12";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3690,7 +3690,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_13";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3710,7 +3710,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_14";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3730,7 +3730,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_15";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3750,7 +3750,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_16";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3770,7 +3770,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_17";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3790,7 +3790,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_18";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3810,7 +3810,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_19";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3830,7 +3830,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_20";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3850,7 +3850,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_21";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3870,7 +3870,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_22";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3890,7 +3890,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_23";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
@@ -3910,7 +3910,7 @@ class Mission {
 					leader=1;
 					skill=0.5;
 					text="Station_shop_24";
-					init="this enableSimulation false; this allowDamage false; this addAction["Tankstelle ausrauben",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tankstelle ausrauben"",life_fnc_robShops]; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
 				};
 			};
 		};
