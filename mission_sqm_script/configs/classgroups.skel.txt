@@ -3970,9 +3970,33 @@
 		};
 		
 		//
+		// Athira Market custom logic (hiding buildings and NPCs)
+		//
+		class Item109
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				//
+				// hide the building next to the marketplace (this will be replaced with a shop)
+				//
+				class Item0
+				{
+					position[]={14011.414,32.316982,18656.305};
+					id=241;
+					side="LOGIC";
+					vehicle="Logic";
+					skill=0.60000002;
+					init="hideObjectGlobal nearestBuilding [14011.414,18656.305,32.316982];";
+				};
+				
+				items=1;
+			};
+		};
+		//
 		// XOXO Class Group Item Counter
 		//
-		items=109;
+		items=110;
 
 //
 // if you add content here make sure you increment the following number in the Makefile:
