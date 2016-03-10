@@ -384,4 +384,11 @@ class Life_Client_Core
 		class vehicleWarned {};
 		class vehicleEmpd {};
 	};
+	
+	class Actions
+	{
+     		class robShops {};
+     		class robShops2 {};
+     		class shopState {};
+  	};
 };
