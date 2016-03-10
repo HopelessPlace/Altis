@@ -32,6 +32,17 @@ switch (_side) do
 		];
 
 		//
+		// XOXO Gang Spawnpoints
+		//
+		
+		//
+		// DHS
+		//
+		//if ((group player) == "Die heiligen Säcke") then {
+		//	_return pushBack ["thronos_spawn_1", "Thronos", "\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+		//};
+		
+		//
 		// XOXO Rebel Spawn Points
 		//
 		if (license_civ_rebel && playerSide == civilian) then {

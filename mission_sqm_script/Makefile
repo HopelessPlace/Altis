@@ -6,7 +6,9 @@ BAUPROJEKT3 = ../Bauprojekte/Rebellen/Drimea/Checkpoint/mission.sqm
 
 BAUPROJEKT4 = ../Bauprojekte/Rebellen/Thronos/Base/mission.sqm
 
-FIRST_ID_CLASS_VEHICLES = 242
+MACROS = ./macros
+
+FIRST_ID_CLASS_VEHICLES = 246
 
 all: bauprojekte Lampen_einschalten merge merge_ohne_Bauprojekte
 
@@ -34,7 +36,7 @@ merge:
 		"configs/addOnsAuto.skel.txt" \
 		"configs/classgroups.skel.txt" \
 		"configs/classmarkers.skel.txt" \
-		"configs/classvehicles.skel.txt $(shell ls tmp2/*.txt)" "$(FIRST_ID_CLASS_VEHICLES)" | \
+		"configs/classvehicles.skel.txt $(shell ls tmp2/*.txt)" "$(FIRST_ID_CLASS_VEHICLES)" "$(MACROS)" | \
 			tee ../Altis_Life.Altis/mission.sqm
 
 merge_ohne_Bauprojekte:
@@ -45,6 +47,5 @@ merge_ohne_Bauprojekte:
                 "configs/addOnsAuto.skel.txt" \
                 "configs/classgroups.skel.txt" \
                 "configs/classmarkers.skel.txt" \
-                "configs/classvehicles.skel.txt" "$(FIRST_ID_CLASS_VEHICLES)" | \
+                "configs/classvehicles.skel.txt" "$(FIRST_ID_CLASS_VEHICLES)" "$(MACROS)" | \
                         tee ../Altis_Life.Altis/mission_vanilla.sqm
-

@@ -1841,7 +1841,67 @@
 			name="medic_spawn_4_heli_garage";
 			type="Empty";
 		};
+		
+		//
+		// Thronos spawnpoints
+		//
+		
+		//
+		// hinten rechts (von suedosten aus gesehen)
+		//
+		class Item229
+		{
+			position[]={4833.6572,339.01788,21956.551};
+			name="thronos_spawn_1";
+			type="Empty";
+			angle=90;
+		};
+		
+		//
+		// hinten links
+		//
+		class Item230
+		{
+			position[]={4829.3018,338.58954,21941.311};
+			name="thronos_spawn_2";
+			type="Empty";
+			angle=150;
+		};
+		
+		//
+		// vorne links
+		//
+		class Item231
+		{
+			position[]={4920.6162,332.13278,21861.725};
+			name="thronos_spawn_3";
+			type="Empty";
+			angle=180;
+		};
+		
+		//
+		// vorne rechts
+		//
+		class Item232
+		{
+			position[]={4935.7222,332.19809,21862.734};
+			name="thronos_spawn_4";
+			type="Empty";
+			angle=180;
+		};
+		
+		//
+		// heli spawn an der Strasse
+		//
+		class Item233
+		{
+			position[]={4754.7344,314.24139,21831.289};
+			name="thronos_spawn_5";
+			type="Empty";
+			angle=240;
+		};
+		
 		//
 		// XOXO Class Marker Item Counter
 		//
-		items=229;
+		items=234;

@@ -3993,10 +3993,101 @@
 				items=1;
 			};
 		};
+		
+		//
+		// Thronos NPCs
+		//
+		
+		//
+		// Medic NPC in the medevac box
+		//
+		class Item110
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4856.1606,334.71906,21883.984};
+					azimut=320;
+					offsetY=1.75;
+					special="NONE";
+					id=242;
+					side="EAST";
+					vehicle="O_medic_F";
+					leader=1;
+					init="  this enableSimulation false; this allowDamage false; removeBackpack this; removeAllWeapons this; this addAction[localize""STR_MAR_Medical_Assistance"",life_fnc_healHospital];  ";
+				};
+			};
+		};
+
+		class Item111
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4926.856,341.08353,21896.119};
+					azimut=225;
+					offsetY=1.85;
+					special="NONE";
+					id=243;
+					side="EAST";
+					vehicle="O_crew_F";
+					leader=1;
+					init="  this enableSimulation false; this allowDamage false; removeBackpack this; removeAllWeapons this;  XOXO_MACRO_thronos_trader1.txt_XOXO_MACRO  ";
+				};
+			};
+		};
+
+		class Item112
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4928.2524,340.84241,21895.496};
+					azimut=225;
+					offsetY=2.0999999;
+					special="NONE";
+					id=244;
+					side="EAST";
+					vehicle="O_crew_F";
+					leader=1;
+					init="  this enableSimulation false; this allowDamage false; removeBackpack this; removeAllWeapons this;  XOXO_MACRO_thronos_trader2.txt_XOXO_MACRO  ";
+				};
+			};
+		};
+		class Item113
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4925.5366,341.31778,21896.934};
+					azimut=225;
+					offsetY=1.6;
+					special="NONE";
+					id=245;
+					side="EAST";
+					vehicle="O_crew_F";
+					leader=1;
+					init="  this enableSimulation false; this allowDamage false; removeBackpack this; removeAllWeapons this;  XOXO_MACRO_thronos_trader3.txt_XOXO_MACRO  ";
+				};
+			};
+		};
+
 		//
 		// XOXO Class Group Item Counter
 		//
-		items=110;
+		items=114;
 
 //
 // if you add content here make sure you increment the following number in the Makefile:

@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 import sys
+import glob
+import os
 
 def process_addon(addons_file_list):
     _addons = []
@@ -171,9 +173,29 @@ if __name__ == "__main__":
                 .rstrip()
             )
 
+	#
+	# load the macros
+	#
+	macros = {}
+	
+	macro_directory = sys.argv[8];
+	
+	os.chdir(macro_directory)
+	
+	for filename in glob.glob("*.txt"):
+		with open (filename, "r") as macro_file:
+			macros[filename] = macro_file.read().replace('\n', ' ').replace('\r', ' ')
+	
     #
-    # print the whole output, this is the mission.sqm that your server will use
+    # print the whole output after parsing all the macro placeholders
+	#
+	# this is the mission.sqm that your server will use
     #
     for line in output:
-        print line
-
+		input_line = line
+		
+		for key in macros:
+			output_line = input_line.replace('XOXO_MACRO_%s_XOXO_MACRO' % key, macros[key])
+			input_line = output_line
+		
+		print output_line
