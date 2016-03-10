@@ -7,7 +7,8 @@ _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
 _action = [_this,2] call BIS_fnc_param;
 
 //Wenn nicht genug Cops online sind gibt er dieses aus
-if(playersNumber west < 3) exitWith { hint "Die Kasse ist leer, komm später vorbei!"};
+
+if(playersNumber west < (LIFE_SETTINGS(getNumber,"cops_online_tankstelle_min")) ) exitWith { hint "Die Kasse ist leer, Du kannst gerade nicht ausrauben."};
 if(isNull _shop OR isNull _robber) exitWith {};
 
 // Damit nur Zivilisten die Tankstelle ausrauben können

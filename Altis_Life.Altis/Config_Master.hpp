@@ -18,6 +18,7 @@ class Life_Settings {
 
     /* Cop related settings */
     cops_online_min = 5; //minimum cops online for robbing a bank
+	cops_online_tankstelle_min = 1; //minimum cops online for robbing a gas station
 
     /* Medic related settings*/
     allow_medic_weapons = false; // true allows medics to hold/use weapons - false disallows
