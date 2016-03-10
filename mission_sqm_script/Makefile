@@ -8,7 +8,7 @@ BAUPROJEKT4 = ../Bauprojekte/Rebellen/Thronos/Base/mission.sqm
 
 FIRST_ID_CLASS_VEHICLES = 242
 
-all: bauprojekte Lampen_einschalten merge
+all: bauprojekte Lampen_einschalten merge merge_ohne_Bauprojekte
 
 bauprojekte:
 	cat bin/slice.sh | tr -d '\r' | tee bin/.slice_CRLF_sucks.sh
@@ -36,4 +36,15 @@ merge:
 		"configs/classmarkers.skel.txt" \
 		"configs/classvehicles.skel.txt $(shell ls tmp2/*.txt)" "$(FIRST_ID_CLASS_VEHICLES)" | \
 			tee ../Altis_Life.Altis/mission.sqm
+
+merge_ohne_Bauprojekte:
+	@chmod 0755 bin/glue.py
+	@bin/glue.py \
+		"configs/mission.sqm.skel.txt" \
+		"configs/addOns.skel.txt" \
+                "configs/addOnsAuto.skel.txt" \
+                "configs/classgroups.skel.txt" \
+                "configs/classmarkers.skel.txt" \
+                "configs/classvehicles.skel.txt" "$(FIRST_ID_CLASS_VEHICLES)" | \
+                        tee ../Altis_Life.Altis/mission_vanilla.sqm
 
