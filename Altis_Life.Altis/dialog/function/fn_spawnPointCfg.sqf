@@ -14,8 +14,7 @@ _side = [_this,0,civilian,[civilian]] call BIS_fnc_param;
 //Spawn Marker, Spawn Name, PathToImage
 switch (_side) do
 {
-	case west:
-	{
+	case west: {
 		_return = [
 			["cop_spawn_3","Athira HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
 			["cop_spawn_1","Kavala HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -23,13 +22,11 @@ switch (_side) do
 			["cop_spawn_4","Air HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
 			["cop_spawn_5","HW Patrol","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 		];
-		
 	};
 	
-	case civilian:
-	{
+	case civilian: {
 		_return = [];
-
+		
 		//
 		// XOXO player houses
 		//
@@ -41,19 +38,6 @@ switch (_side) do
 				
 				_return pushBack [format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"];
 			} foreach life_houses;
-		};
-		
-		//
-		// XOXO Gang Spawnpoints
-		//
-		
-		//
-		// Die heiligen Säcke
-		//
-		// [DHS]
-		//
-		if (((group player) getVariable "gang_name") == "DHS") then {
-			_return pushBack ["thronos_spawn_1", "DHS Basis", "\a3\ui_f\data\map\MapControl\chapel_ca.paa"];
 		};
 		
 		//
@@ -94,7 +78,7 @@ switch (_side) do
 			};
 		};
 	};
-	
+
 	case independent: {
 		_return = [
 			["medic_spawn_4","Athira Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],

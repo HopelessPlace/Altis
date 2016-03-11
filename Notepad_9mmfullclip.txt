@@ -309,3 +309,18 @@ building animate ["door_3_rot",1];
 building setVariable ['bis_disabled_Door_1',1,true];
 building setVariable ['bis_disabled_Door_2',1,true];
 building setVariable ['bis_disabled_Door_3',1,true];
+
+
+WORK IN PROGRESS:
+
+fn_spawnPointCfg.sqf
+race condition auf group player
+
+		//
+		// XOXO [DHS]
+		//
+		if (  ((group player) getVariable ""gang_name"") == "DHS"  ) then {
+			_return pushBack ["thronos_spawn_1", "DHS Basis", "\a3\ui_f\data\map\MapControl\chapel_ca.paa"];
+		};
+		
+		
