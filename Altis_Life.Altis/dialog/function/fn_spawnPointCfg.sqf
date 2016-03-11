@@ -28,8 +28,7 @@ switch (_side) do
 	
 	case civilian:
 	{
-		_return = [
-		];
+		_return = [];
 
 		//
 		// XOXO player houses
@@ -54,26 +53,26 @@ switch (_side) do
 		// [DHS]
 		//
 		if (((group player) getVariable "gang_name") == "DHS") then {
-			_return pushBack ["thronos_spawn_1", "Thronos", "\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+			_return pushBack ["thronos_spawn_1", "DHS Basis", "\a3\ui_f\data\map\MapControl\chapel_ca.paa"];
 		};
 		
 		//
 		// XOXO Rebel Spawn Points
 		//
-		if (license_civ_rebel && playerSide == civilian) then {
+		if (license_civ_rebel) then {
 			//
 			// XOXO Rebel Outpost North West
 			//
-			_return pushBack ["rebel_spawn_1", "Rebels NW", "\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+			_return pushBack ["rebel_spawn_1", "Rebels NW", "\a3\ui_f\data\map\MapControl\bunker_ca.paa"];
 
 			//
 			// XOXO Rebel Outpost South West
 			//
 			if (life_atmbank > 599999) then {
-				_return pushBack ["rebel_spawn_2", "Rebels SW", "\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+				_return pushBack ["rebel_spawn_2", "Rebels SW", "\a3\ui_f\data\map\MapControl\rock_ca.paa"];
 			} else {
 				if (life_cash > 599999) then {
-					_return pushBack ["rebel_spawn_2", "Rebels SW", "\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+					_return pushBack ["rebel_spawn_2", "Rebels SW", "\a3\ui_f\data\map\MapControl\rock_ca.paa"];
 				};
 			};
 		} else {
@@ -81,9 +80,9 @@ switch (_side) do
 			// XOXO Beginner Spawn Point
 			//
 			if (life_atmbank < 599999) then {
-				_return pushBack ["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+				_return pushBack ["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\ruin_ca.paa"];
 			} else {
-				_return pushBack ["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+				_return pushBack ["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\church_ca.paa"];
 			
 				//
 				// You can only spawn in the outer cities if you do not carry too much money around on you.
