@@ -80,13 +80,7 @@ class CfgFunctions {
 
 	class TON_System {
 		tag = "TON";
-		
-		class Tankstellenraub {
-			file = "\life_server\Functions\Tankstellenraub";
-			class robShops {}; 
-			class shopState {};
-		};
-		
+
 		class Systems {
 			file = "\life_server\Functions\Systems";
 			class managesc {};
@@ -107,6 +101,8 @@ class CfgFunctions {
 			class cleanupRequest {};
 			class setObjVar {};
 			class keyManagement {};
+			class robShops {}; 
+			class shopState {};
 		};
 
 		class Housing {
