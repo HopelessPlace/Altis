@@ -17,7 +17,7 @@ _rip = true;
 _kassa = 3000 + round(random 12000); //Maximal & Minimal Beute
 [[_shop,_robber,_action,-1],"TON_fnc_shopState",false,false] spawn life_fnc_MP;
 _chance = random(100);
-if(_chance >= 85) then { hint "Der Kassierer hat heimlich die Polizei informiert!"; [[0,format["ALARM! - Tankestelle: %1 wird ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; }; //15% Chance das die Polizei allamiert wird
+if(_chance >= 50) then { hint "Der Kassierer hat heimlich die Polizei informiert!"; [[0,format["ALARM! - Tankestelle: %1 wird ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
 //Setup our progress bar.
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
