@@ -26,7 +26,19 @@ class WeaponShops {
             { "hgun_Pistol_heavy_02_F", "", 9850, -1 },
             { "hgun_ACPC2_F", "", 11500, -1 },
             { "hgun_PDW2000_F", "", 20000, -1 },
-            { "optic_ACO_grn_smg", "", 2500, 250 }
+            { "optic_ACO_grn_smg", "", 2500, 250 },
+            { "Binocular", "", 150, -1 },
+            { "ItemGPS", "", 100, 45 },
+            { "ItemMap", "", 50, 35 },
+            { "ItemCompass", "", 50, 25 },
+            { "ItemWatch", "", 50, -1 },
+            { "ToolKit", "", 250, 75 },
+            { "FirstAidKit", "", 150, 65 },
+            { "NVGoggles", "", 2000, 980 },
+            { "Chemlight_red", "", 300, -1 },
+            { "Chemlight_yellow", "", 300, 50 },
+            { "Chemlight_green", "", 300, 50 },
+            { "Chemlight_blue", "", 300, 50 }
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 25 },
@@ -48,7 +60,19 @@ class WeaponShops {
             { "optic_ACO_grn", "", 3500, 350 },
             { "optic_Holosight", "", 3600, 275 },
             { "optic_Hamr", "", 7500, -1 },
-            { "acc_flashlight", "", 1000, 100 }
+            { "acc_flashlight", "", 1000, 100 },
+            { "Binocular", "", 150, -1 },
+            { "ItemGPS", "", 100, 45 },
+            { "ItemMap", "", 50, 35 },
+            { "ItemCompass", "", 50, 25 },
+            { "ItemWatch", "", 50, -1 },
+            { "ToolKit", "", 250, 75 },
+            { "FirstAidKit", "", 150, 65 },
+            { "NVGoggles", "", 2000, 980 },
+            { "Chemlight_red", "", 300, -1 },
+            { "Chemlight_yellow", "", 300, 50 },
+            { "Chemlight_green", "", 300, 50 },
+            { "Chemlight_blue", "", 300, 50 }
         };
         mags[] = {
             { "30Rnd_556x45_Stanag", "", 300 },
@@ -74,7 +98,19 @@ class WeaponShops {
             { "optic_LRPS", "", 25000, 250 },
             { "optic_MRCO", "", 15000, 250 },
             { "optic_Hamr", "", 10000, 250 },
-            { "optic_ACO_grn_smg", "", 950, 250 }
+            { "optic_ACO_grn_smg", "", 950, 250 },
+            { "Binocular", "", 150, -1 },
+            { "ItemGPS", "", 100, 45 },
+            { "ItemMap", "", 50, 35 },
+            { "ItemCompass", "", 50, 25 },
+            { "ItemWatch", "", 50, -1 },
+            { "ToolKit", "", 250, 75 },
+            { "FirstAidKit", "", 150, 65 },
+            { "NVGoggles", "", 2000, 980 },
+            { "Chemlight_red", "", 300, -1 },
+            { "Chemlight_yellow", "", 300, 50 },
+            { "Chemlight_green", "", 300, 50 },
+            { "Chemlight_blue", "", 300, 50 }
         };
         mags[] = {
             { "10Rnd_762x54_Mag", "", 12000 },
@@ -139,23 +175,29 @@ class WeaponShops {
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
-            
-	    { "arifle_sdar_F", "Taser Rifle", 20000, 7500 },		//Taser Gewehr
-	    { "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },		//P07 Taser
-	    { "muzzle_snds_L", "", 650, -1 },				//Taser Schalldämpfer
-	    { "acc_flashlight", "", 750, -1 },				//Waffenlampe
-            { "optic_Holosight", "", 1200, -1 },			//Holo
-            { "bipod_01_F_blk", "Zweibein", 500, -1},			//Zweibein
-            { "NVGoggles", "Nachtsicht", 500, -1},			//Nachtsicht
-	    { "Binocular", "", 150, -1 },				//Fernglas
-            { "ItemGPS", "", 100, -1 },					//GPS
-            { "ToolKit", "", 250, -1 },					//Werkzeug
-            { "FirstAidKit", "", 150, -1 },				//Erster Hilfe
-            { "Medikit", "", 1000, -1 }					//Verbandskasten
+			{ "arifle_sdar_F", "Taser Rifle", 20000, 7500 },		//Taser Gewehr
+			{ "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },		//P07 Taser
+			{ "muzzle_snds_L", "", 650, -1 },						//Taser Schalldämpfer
+			{ "acc_flashlight", "", 750, -1 },						//Waffenlampe
+            { "optic_Holosight", "", 1200, -1 },					//Holo
+            { "bipod_01_F_blk", "Zweibein", 500, -1},				//Zweibein
+            { "NVGoggles", "Nachtsicht", 500, -1},					//Nachtsicht
+			{ "Binocular", "", 150, -1 },							//Fernglas
+            { "ItemGPS", "", 100, -1 },								//GPS
+            { "ToolKit", "", 250, -1 },								//Werkzeug
+            { "FirstAidKit", "", 150, -1 },							//Erster Hilfe
+            { "Medikit", "", 1000, -1 },							//Verbandskasten
+            { "ItemMap", "", 50, 35 },
+            { "ItemCompass", "", 50, 25 },
+            { "ItemWatch", "", 50, -1 },
+            { "Chemlight_red", "", 300, -1 },
+            { "Chemlight_yellow", "", 300, 50 },
+            { "Chemlight_green", "", 300, 50 },
+            { "Chemlight_blue", "", 300, 50 }
         };
         mags[] = {
             { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45 },	//Taser Gewehr munni
-            { "16Rnd_9x21_Mag", "", 25 },				//P07 munni
+            { "16Rnd_9x21_Mag", "", 25 },							//P07 munni
         };
     };
 
@@ -165,18 +207,17 @@ class WeaponShops {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 2, "Du musst Kommissar sein!" };
         items[] = {
-            
-	    { "arifle_sdar_F", "Taser Rifle", 20000, 7500 },		//Taser Gewehr
-	    { "SMG_02_F", "", 30000, 10000 },				//Sting
-	    { "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },		//P07 Taser
-	    { "hgun_P07_F", "", 7500, 1500 },				//P07
-	    { "muzzle_snds_L", "", 650, -1 },				//Taser Schalldämpfer
-	    { "MineDetector", "", 1000, -1 },				//Minensucher
-	    { "acc_flashlight", "", 750, -1 },				//Waffenlampe
+			{ "arifle_sdar_F", "Taser Rifle", 20000, 7500 },		//Taser Gewehr
+			{ "SMG_02_F", "", 30000, 10000 },				//Sting
+			{ "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },		//P07 Taser
+			{ "hgun_P07_F", "", 7500, 1500 },				//P07
+			{ "muzzle_snds_L", "", 650, -1 },				//Taser Schalldämpfer
+			{ "MineDetector", "", 1000, -1 },				//Minensucher
+			{ "acc_flashlight", "", 750, -1 },				//Waffenlampe
             { "optic_Holosight", "", 1200, -1 },			//Holo
             { "bipod_01_F_blk", "Zweibein", 500, -1},			//Zweibein
             { "NVGoggles", "Nachtsicht", 500, -1},			//Nachtsicht
-	    { "Binocular", "", 150, -1 },				//Fernglas
+			{ "Binocular", "", 150, -1 },				//Fernglas
             { "ItemGPS", "", 100, -1 },					//GPS
             { "ToolKit", "", 250, -1 },					//Werkzeug
             { "FirstAidKit", "", 150, -1 },				//Erster Hilfe
@@ -184,9 +225,9 @@ class WeaponShops {
         };
         mags[] = {
             { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45 },	//Taser Gewehr munni
-	    { "30Rnd_65x39_caseless_mag", "", 130 },			//MXM munni
+			{ "30Rnd_65x39_caseless_mag", "", 130 },			//MXM munni
             { "30Rnd_65x39_caseless_mag_Tracer", "", 130 },		//MXM gummi munni
-	    { "30Rnd_9x21_Mag", "", 250 },				//Sting munni
+			{ "30Rnd_9x21_Mag", "", 250 },				//Sting munni
             { "16Rnd_9x21_Mag", "", 25 },				//P07 munni
         };
     };
