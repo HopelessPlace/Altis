@@ -3895,7 +3895,7 @@
 					leader=1;
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="  this enableSimulation false; this allowDamage false; removeVest this; removeHeadgear this; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide == independent ']; this addAction[localize""STR_MAR_EMS_Item_Shop"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[localize""STR_MAR_EMS_Clothing_Shop"",life_fnc_clothingMenu,""med_clothing""]; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_4_3"",""med"",""Athira General Hospital""]]; this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_4_heli_buy"",""med"",""Athira General Hospital""]]; this addAction[localize""STR_MAR_W_Car_Garage"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_4_4""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent']; this addAction[localize""STR_MAR_Helicopter_Garage"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_spawn_4_heli_garage""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent ']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""med_market""]; waitUntil {uniform this == ""U_Rangemaster""}; this setObjectTextureGlobal [0,""textures\medic_uniform.jpg""];  ";
+					init="  this enableSimulation false; this allowDamage false; removeVest this; removeHeadgear this;  XOXO_MACRO_athira_hospital_trader1.txt_XOXO_MACRO  ";
 				};
 				
 				//
@@ -4085,9 +4085,106 @@
 		};
 
 		//
+		// Kavala Market Dome Door AUTOMATION
+		//
+		class Item114
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3629.9976,9.9900074,13134.991};
+					id=246;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					init="  building = (nearestObject [getPosATL this,""Land_Dome_Big_F""]);    building animate [""door_1A_move"",1];  building animate [""door_1B_move"",1];  building animate [""door_2_rot"",1];  building animate [""door_3_rot"",1]; building setVariable ['bis_disabled_Door_1',1,true]; building setVariable ['bis_disabled_Door_2',1,true]; building setVariable ['bis_disabled_Door_3',1,true];  ";
+				};
+			};
+		};
+		//
+		// Kavala Market Objektvernichter
+		//
+
+		class Item115
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3667.0232,10.24625,13142.541};
+					id=247;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					init="{ _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],20]);";
+				};
+			};
+		};
+
+		class Item116
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3664.845,10.391477,13122.499};
+					id=248;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					init="{ _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],20]);";
+				};
+			};
+		};
+		
+		class Item117
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3640.7419,10.143229,13123.807};
+					id=249;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					init="{ _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],20]);";
+				};
+			};
+		};
+		
+		class Item118
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3641.468,10.066877,13143.412};
+					id=250;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					init="{ _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],20]);";
+				};
+			};
+		};
+		
+		
+		//
 		// XOXO Class Group Item Counter
 		//
-		items=114;
+		items=119;
 
 //
 // if you add content here make sure you increment the following number in the Makefile:

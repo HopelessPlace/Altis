@@ -296,3 +296,16 @@ http://www.altisliferpg.com/topic/9620-emergency-lighting-system-and-sirens/
 
 _toSpawn = "B_Rangemaster_F" createVehicle position player;
 
+
+
+this enableSimulation false; this allowDamage false;  this setVariable ['bis_disabled_Door_1',1,true]; this setVariable ['bis_disabled_Door_2',1,true]; this setVariable ['bis_disabled_Door_3',1,true];  this animate ["door_1A_move",1];  this animate ["door_1B_move",1];  this animate ["door_2_rot",1];  this animate ["door_3_rot",1];
+
+building = (nearestObject [getPosATL this,"Land_Dome_Big_F"]);
+
+building animate ["door_1A_move",1];
+building animate ["door_1B_move",1];
+building animate ["door_2_rot",1];
+building animate ["door_3_rot",1];
+building setVariable ['bis_disabled_Door_1',1,true];
+building setVariable ['bis_disabled_Door_2',1,true];
+building setVariable ['bis_disabled_Door_3',1,true];

@@ -6,9 +6,11 @@ BAUPROJEKT3 = ../Bauprojekte/Rebellen/Drimea/Checkpoint/mission.sqm
 
 BAUPROJEKT4 = ../Bauprojekte/Rebellen/Thronos/Base/mission.sqm
 
+BAUPROJEKT5 = ../Bauprojekte/Zivilisten/Kavalla/Markt/mission.sqm
+
 MACROS = ./macros
 
-FIRST_ID_CLASS_VEHICLES = 246
+FIRST_ID_CLASS_VEHICLES = 251
 
 all: bauprojekte Lampen_einschalten merge merge_ohne_Bauprojekte
 
@@ -19,6 +21,7 @@ bauprojekte:
 	./bin/.slice_CRLF_sucks.sh $(BAUPROJEKT2) | tee tmp/Feuerwehr_Athira_Krankenhaus.txt
 	./bin/.slice_CRLF_sucks.sh $(BAUPROJEKT3) | tee tmp/Rebellen_Drimea_Checkpoint.txt
 	./bin/.slice_CRLF_sucks.sh $(BAUPROJEKT4) | tee tmp/Rebellen_Thronos_Base.txt
+	./bin/.slice_CRLF_sucks.sh $(BAUPROJEKT5) | tee tmp/Zivilisten_Kavala_Markt.txt
 
 Lampen_einschalten:
 	cat bin/lamps.sh | tr -d '\r' | tee bin/.lamps_CRLF_sucks.sh
@@ -27,6 +30,7 @@ Lampen_einschalten:
 	./bin/.lamps_CRLF_sucks.sh tmp/Feuerwehr_Athira_Krankenhaus.txt | tee tmp2/Feuerwehr_Athira_Krankenhaus.txt
 	./bin/.lamps_CRLF_sucks.sh tmp/Rebellen_Drimea_Checkpoint.txt | tee tmp2/Rebellen_Drimea_Checkpoint.txt
 	./bin/.lamps_CRLF_sucks.sh tmp/Rebellen_Thronos_Base.txt | tee tmp2/Rebellen_Thronos_Base.txt
+	./bin/.lamps_CRLF_sucks.sh tmp/Zivilisten_Kavala_Markt.txt | tee tmp2/Zivilisten_Kavala_Markt.txt
 
 merge:
 	@chmod 0755 bin/glue.py
@@ -49,3 +53,4 @@ merge_ohne_Bauprojekte:
                 "configs/classmarkers.skel.txt" \
                 "configs/classvehicles.skel.txt" "$(FIRST_ID_CLASS_VEHICLES)" "$(MACROS)" | \
                         tee ../Altis_Life.Altis/mission_vanilla.sqm
+
