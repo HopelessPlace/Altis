@@ -832,6 +832,7 @@ class LifeCfgVehicles {
         textures[] = {
             { "Polizei", "cop", {
                 "textures\polizei_hellcat.jpg"
+            } }
         };
     };
 
