@@ -105,7 +105,8 @@ class CarShops {
         side = "cop";
         vehicles[] = {
             { "B_Heli_Light_01_F", 75000, { "cAir" }, { "", "", -1 } },
-            { "B_Heli_Transport_01_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 3 } }
+            { "B_Heli_Transport_01_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 5 } },
+       	    { "I_Heli_light_03_unarmed_F", 120000, { "cAir" }, { "life_coplevel", "SCALAR", 3 } }
         };
     };
 
@@ -433,6 +434,18 @@ class LifeCfgVehicles {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
             } },
+            { "Rockstar Lila", "civ", {
+              "textures\civ_offroad_rockstarlila.jpg",
+              "textures\civ_offroad_rockstarlila.jpg"
+            } },
+            { "Rockstar Gelb", "civ", {
+              "textures\civ_offroad_rockstargelb.jpg",
+              "textures\civ_offroad_rockstargelb.jpg"
+            } },
+            { "Weed", "civ", {
+              "textures\civ_offroad_weed.jpg",
+              "textures\civ_offroad_weed.jpg"
+            } },
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } },
@@ -564,6 +577,10 @@ class LifeCfgVehicles {
             { "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
                 "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
+            }},
+            { "Red Bull", "civ", {
+                "textures\civ_zamak_0.jpg",
+                "textures\civ_zamak_1.jpg"
             } },
             { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
@@ -650,9 +667,15 @@ class LifeCfgVehicles {
             { "Spongbob", "civ", {
                 "textures\spongbob_suv.paa"
             } },
+            { "Hopeless Place", "civ", {
+                "textures\civ_suv_hop.jpg"
+            } },
+            { "Batman", "civ", {
+                "textures\civ_suv_batman.jpg"
+            } },
             { "Police", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
-            } },
+            } }
         };
     };
 
@@ -716,6 +739,9 @@ class LifeCfgVehicles {
         textures[] = {
             { "ADAC", "med", {
                 "textures\adac_m900.paa"
+            } },
+            { "Red Bull", "civ", {
+                "textures\civ_hummingbird_redbull.jpg"
             } }
         };
     };
@@ -727,8 +753,8 @@ class LifeCfgVehicles {
         insurance = 2500;
         chopShop = 125000;
         textures[] = {
-            { "Police", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
+            { "Polizei", "cop", {
+                "textures\polizei_hummingbird.paa"
             } },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
@@ -794,6 +820,18 @@ class LifeCfgVehicles {
             { "ADAC", "med", {
                 "textures\adac_orca.paa"
             } }
+        };
+    };
+
+    class I_Heli_light_03_unarmed_F {
+        vItemSpace = 210;
+        storageFee[] = { 55000, 0, 22000, 0 };
+        garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 375000;
+        textures[] = {
+            { "Polizei", "cop", {
+                "textures\polizei_hellcat.jpg"
         };
     };
 
