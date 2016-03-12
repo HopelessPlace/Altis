@@ -4327,13 +4327,52 @@
 		};		
 		
 		//
+		// KAVALA TRADERS -- TEMPORARY UGLY-AS-FUCK HACK BECAUSE WE ARE RUNNING OUT OF TIME --
+		//
+		class Item126
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3645.5642,10.205268,13124.471};
+					azimut=50;
+					id=258;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					init="  this enableSimulation false; this allowDamage false; removeBackpack this; removeAllWeapons this;  XOXO_MACRO_kavala_trader1.txt_XOXO_MACRO  ";
+				};
+			};
+		};		
+		class Item127
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3627.3289,10.101842,13112.629};
+					azimut=280;
+					id=259;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					init="  this enableSimulation false; this allowDamage false; removeBackpack this; removeAllWeapons this;  XOXO_MACRO_kavala_trader2.txt_XOXO_MACRO  ";
+				};
+			};
+		};
+		//
 		// XOXO Class Group Item Counter
 		//
-		items=126;
+		items=128;
 
 //
 // if you add content here make sure you increment the following number in the Makefile:
 //
-// FIRST_ID_CLASS_VEHICLES = 
+// FIRST_ID_CLASS_VEHICLES 
 // 
 

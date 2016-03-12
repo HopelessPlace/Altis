@@ -1,0 +1,13 @@
+
+this addAction[
+	localize""STR_MAR_Store_vehicle_in_Garage"",
+	life_fnc_storeVehicle,
+	"""",
+	0,
+	false,
+	false,
+	"""",
+	'!life_garage_store'
+];
+
+this setVariable[""realname"",""Garage""];

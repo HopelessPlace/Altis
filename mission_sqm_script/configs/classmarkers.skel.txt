@@ -305,14 +305,14 @@
 		};
 		class Item39
 		{
-			position[]={3647.8298,10.226415,13122.039};
+			position[]={3608.8777,9.6787882,13137.764};
 			name="civ_car_1";
 			type="Empty";
 			angle=222.94595;
 		};
 		class Item40
 		{
-			position[]={3653.8333,10.282446,13121.501};
+			position[]={3607.2126,10.213763,13096.795};
 			name="civ_car_1_1";
 			type="Empty";
 			angle=208.40829;

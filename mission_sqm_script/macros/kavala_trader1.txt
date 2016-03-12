@@ -1,0 +1,86 @@
+
+this addAction[
+	""<t color='#ADFF2F'>ATM</t>"",
+	life_fnc_atmMenu,
+	"""",
+	0,
+	FALSE,
+	FALSE,
+	"""",
+	' vehicle player == player && player distance _target < 4 '
+];
+
+this addAction[
+	format[
+		""%1 ($%2)"",
+		localize (getText(missionConfigFile >> ""Licenses"" >> ""driver"" >> ""displayName"")),
+		[(getNumber(missionConfigFile >> ""Licenses"" >> ""driver"" >> ""price""))] call life_fnc_numberText
+	],
+	life_fnc_buyLicense,
+	""driver"",
+	0,
+	false,
+	false,
+	"""",
+	' !license_civ_driver && playerSide == civilian '
+];
+
+this addAction[
+	format[
+		""%1 ($%2)"",
+		localize (getText(missionConfigFile >> ""Licenses"" >> ""trucking"" >> ""displayName"")),
+		[(getNumber(missionConfigFile >> ""Licenses"" >> ""trucking"" >> ""price""))] call life_fnc_numberText
+	],
+	life_fnc_buyLicense,
+	""trucking"",
+	0,
+	false,
+	false,
+	"""",
+	' !license_civ_trucking && playerSide == civilian '
+];
+
+this addAction[
+	localize""STR_Shops_Market"",
+	life_fnc_virt_menu,
+	""market""
+];
+
+this addAction[
+	localize""STR_MAR_Clothing_Store"",
+	life_fnc_clothingMenu,
+	""bruce""
+];
+
+this addAction[
+	localize ""STR_MAR_General_Store"",
+	life_fnc_weaponShopMenu,
+	""genstore""
+];
+
+
+this addAction[
+	localize ""STR_MAR_Car_shop"",
+	life_fnc_vehicleShopMenu,
+	[""civ_car"",civilian,""civ_car_1"",""civ"",""Bruce's New & Used Auto's""]
+];
+
+this addAction[
+	localize""STR_MAR_Truck_Shop"",
+	life_fnc_vehicleShopMenu,
+	[""civ_truck"",civilian,""civ_car_1_1"",""civ"",""Bruce's New & Used Trucks""]
+];
+
+this addAction[
+	localize""STR_Garage_Title"",
+	{
+		[getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];
+		life_garage_type = ""Car"";
+		createDialog ""Life_impound_menu"";
+		disableSerialization;
+		ctrlSetText[2802,""Fetching Vehicles....""];
+		life_garage_sp = ""civ_car_1"";
+	}
+];
+
+this setVariable[""realname"",""Super Market""];
