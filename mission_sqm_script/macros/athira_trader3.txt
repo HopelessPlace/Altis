@@ -1,0 +1,25 @@
+
+this addAction[
+	localize""STR_Garage_Title"",
+	{
+		[getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];
+		life_garage_type = ""Car"";
+		createDialog ""Life_impound_menu"";
+		disableSerialization;
+		ctrlSetText[2802,""Fetching Vehicles....""];
+		life_garage_sp = ""athira_market_civ_car_2"";
+	}
+];
+
+this addAction[
+	localize""STR_MAR_Store_vehicle_in_Garage"",
+	life_fnc_storeVehicle,
+	"""",
+	0,
+	false,
+	false,
+	"""",
+	'!life_garage_store'
+];
+
+this setVariable[""realname"",""Garage""];

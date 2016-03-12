@@ -10,7 +10,7 @@ BAUPROJEKT5 = ../Bauprojekte/Zivilisten/Kavalla/Markt/mission.sqm
 
 MACROS = ./macros
 
-FIRST_ID_CLASS_VEHICLES = 251
+FIRST_ID_CLASS_VEHICLES = 257
 
 all: bauprojekte Lampen_einschalten merge merge_ohne_Bauprojekte
 

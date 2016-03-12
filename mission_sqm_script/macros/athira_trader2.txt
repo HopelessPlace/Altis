@@ -1,0 +1,14 @@
+
+this addAction[
+	localize ""STR_MAR_Car_shop"",
+	life_fnc_vehicleShopMenu,
+	[""civ_car"",civilian,""athira_market_civ_car_1"",""civ"",""Bruce's New & Used Auto's""]
+];
+
+this addAction[
+	localize""STR_MAR_Truck_Shop"",
+	life_fnc_vehicleShopMenu,
+	[""civ_truck"",civilian,""athira_market_civ_truck_1"",""civ"",""Bruce's New & Used Trucks""]
+];
+
+this setVariable[""realname"",""Cars and Trucks""];

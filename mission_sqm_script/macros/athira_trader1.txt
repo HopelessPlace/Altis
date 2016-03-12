@@ -1,0 +1,32 @@
+
+this addAction[
+	localize""STR_Shops_Market"",
+	life_fnc_virt_menu,
+	""market""
+];
+
+this addAction[
+	localize""STR_MAR_Clothing_Store"",
+	life_fnc_clothingMenu,
+	""bruce""
+];
+
+this addAction[
+	localize ""STR_MAR_General_Store"",
+	life_fnc_weaponShopMenu,
+	""genstore""
+];
+
+this addAction[
+	localize""STR_MAR_Wong_Food_Cart"",
+	life_fnc_virt_menu,
+	""wongs""
+];
+
+this addAction[
+	localize ""STR_MAR_Fish_Market"",
+	life_fnc_virt_menu,
+	""fishmarket""
+];
+
+this setVariable[""realname"",""Super Market""];

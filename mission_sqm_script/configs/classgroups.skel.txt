@@ -4104,6 +4104,7 @@
 				};
 			};
 		};
+
 		//
 		// Kavala Market Objektvernichter
 		//
@@ -4179,12 +4180,129 @@
 				};
 			};
 		};
-		
-		
+
+		//
+		// Athira Market NPCs
+		//
+		class Item119
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14012.698,25.858891,18657.25};
+					azimut=95;
+					offsetY=1.4;
+					id=251;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					init="  this enableSimulation false; this allowDamage false; removeBackpack this; removeAllWeapons this;  XOXO_MACRO_athira_trader1.txt_XOXO_MACRO  ";
+				};
+			};
+		};
+		class Item120
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14012.31,25.622398,18653.371};
+					azimut=50;
+					offsetY=1.6;
+					id=252;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					init="  this enableSimulation false; this allowDamage false; removeBackpack this; removeAllWeapons this;  XOXO_MACRO_athira_trader2.txt_XOXO_MACRO  ";
+				};
+			};
+		};
+		class Item121
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14012.037,25.715466,18655.385};
+					azimut=50;
+					offsetY=1.5;
+					id=253;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					init="  this enableSimulation false; this allowDamage false; removeBackpack this; removeAllWeapons this;  XOXO_MACRO_athira_trader3.txt_XOXO_MACRO  ";
+				};
+			};
+		};
+		class Item122
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14010.989,25.673096,18655.811};
+					azimut=25;
+					offsetY=5.5;
+					id=254;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					init="  this enableSimulation false; this allowDamage false; removeBackpack this; removeAllWeapons this;  XOXO_MACRO_athira_trader4.txt_XOXO_MACRO  ";
+				};
+			};
+		};
+		class Item123
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14009.711,25.616148,18656.199};
+					azimut=25;
+					offsetY=5.5;
+					id=255;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					init="  this enableSimulation false; this allowDamage false; removeBackpack this; removeAllWeapons this;  XOXO_MACRO_athira_trader5.txt_XOXO_MACRO  ";
+				};
+			};
+		};
+		class Item124
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14012.578,25.743168,18655.271};
+					azimut=55;
+					offsetY=5.4000001;
+					id=256;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					init="  this enableSimulation false; this allowDamage false; removeBackpack this; removeAllWeapons this;  XOXO_MACRO_athira_trader6.txt_XOXO_MACRO  ";
+				};
+			};
+		};
+
 		//
 		// XOXO Class Group Item Counter
 		//
-		items=119;
+		items=125;
 
 //
 // if you add content here make sure you increment the following number in the Makefile:
