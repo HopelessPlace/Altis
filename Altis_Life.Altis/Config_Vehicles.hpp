@@ -739,11 +739,7 @@ class LifeCfgVehicles {
         textures[] = {
             { "ADAC", "med", {
                 "textures\adac_m900.paa"
-            } },
-            { "Red Bull", "civ", {
-                "textures\civ_hummingbird_redbull.jpg"
             } }
-        };
     };
 
     class B_Heli_Light_01_F {
@@ -756,14 +752,11 @@ class LifeCfgVehicles {
             { "Polizei", "cop", {
                 "textures\polizei_hummingbird.paa"
             } },
-            { "Sheriff", "civ", {
-                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
+            { "Red Bull", "civ", {
+                "textures\civ_hummingbird_redbull.jpg"
             } },
             { "Civ Blue", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa"
-            } },
-            { "Civ Red", "civ", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa"
             } },
             { "Blueline", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_blueline_co.paa"
