@@ -1,78 +1,8 @@
 
 this addAction[
-	localize""STR_Shops_Market"",
-	life_fnc_virt_menu,
-	""market""
-];
-
-this addAction[
-	localize ""STR_MAR_General_Store"",
-	life_fnc_weaponShopMenu,
-	""genstore""
-];
-
-this addAction[
-	localize""STR_MAR_Clothing_Store"",
-	life_fnc_clothingMenu,
-	""bruce""
-];
-
-this addAction[
-	format[""%1 ($%2)"",
-	localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")),
-	[(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],
-	life_fnc_buyLicense,
-	""rebel"",
-	0,
-	false,
-	false,
-	"""",
-	' !license_civ_rebel && playerSide == civilian '
-];
-
-this addAction[
-	localize""STR_MAR_Rebel_Market"",
-	life_fnc_virt_menu,
-	""rebel""
-];
-
-this addAction[
-	localize ""STR_MAR_Rebel_Clothing_Shop"",
-	life_fnc_clothingMenu,
-	""reb"",
-	0,
-	false,
-	false,
-	"""",
-	' license_civ_rebel && playerSide == civilian'
-];
-
-this addAction[
-	localize ""STR_MAR_Rebel_Weapon_Shop"",
-	life_fnc_weaponShopMenu,
-	""rebel"",
-	0,
-	false,
-	false,
-	"""",
-	' license_civ_rebel && playerSide == civilian'
-];
-
-this addAction[
-	""<t color='#ADFF2F'>ATM</t>"",
-	life_fnc_atmMenu,
-	"""",
-	0,
-	FALSE,
-	FALSE,
-	"""",
-	' vehicle player == player && player distance _target < 4 '
-];
-
-this addAction[
 	localize""STR_MAR_W_E_Vehicle Shop"",
 	life_fnc_vehicleShopMenu,
-	[""reb_car"",civilian,[""thronos_spawn_3"",""thronos_spawn_4""],""reb"",""Rebel Motorpool - Western Side""],
+	[""reb_car"",civilian,[""thronos_spawn_3"",""thronos_spawn_4""],""reb"",""Rebel Motorpool - Thronos""],
 	0,
 	false,
 	false,
@@ -93,6 +23,18 @@ this addAction[
 ];
 
 this addAction[
+	localize""STR_Air_Garage_Title"",
+	{
+		[getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];
+		life_garage_type = ""Air"";
+		createDialog ""Life_impound_menu"";
+		disableSerialization;
+		ctrlSetText[2802,""Fetching Vehicles....""];
+		life_garage_sp = ""thronos_spawn_5"";
+	}
+];
+
+this addAction[
 	localize""STR_MAR_Store_vehicle_in_Garage"",
 	{
 		private[""_nearVehicle""];
@@ -109,16 +51,3 @@ this addAction[
 	"""",
 	'!life_garage_store'
 ];
-
-this addAction[
-	localize""STR_Air_Garage_Title"",
-	{
-		[getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];
-		life_garage_type = ""Air"";
-		createDialog ""Life_impound_menu"";
-		disableSerialization;
-		ctrlSetText[2802,""Fetching Vehicles....""];
-		life_garage_sp = ""thronos_spawn_5"";
-	}
-];
-

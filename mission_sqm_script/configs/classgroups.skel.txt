@@ -4203,6 +4203,7 @@
 				};
 			};
 		};
+		
 		class Item120
 		{
 			side="CIV";
@@ -4222,6 +4223,7 @@
 				};
 			};
 		};
+		
 		class Item121
 		{
 			side="CIV";
@@ -4241,6 +4243,7 @@
 				};
 			};
 		};
+		
 		class Item122
 		{
 			side="CIV";
@@ -4260,6 +4263,7 @@
 				};
 			};
 		};
+		
 		class Item123
 		{
 			side="CIV";
@@ -4279,6 +4283,7 @@
 				};
 			};
 		};
+		
 		class Item124
 		{
 			side="CIV";
@@ -4300,9 +4305,31 @@
 		};
 
 		//
+		// NPC next to car garage
+		//
+		class Item125
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14046.368,25.094639,18762.307};
+					azimut=-230.213;
+					id=257;
+					side="CIV";
+					vehicle="C_man_polo_1_F_afro";
+					leader=1;
+					init="  this enableSimulation false; this allowDamage false; removeBackpack this; removeAllWeapons this;  XOXO_MACRO_athira_trader7.txt_XOXO_MACRO  ";
+				};
+			};
+		};		
+		
+		//
 		// XOXO Class Group Item Counter
 		//
-		items=125;
+		items=126;
 
 //
 // if you add content here make sure you increment the following number in the Makefile:

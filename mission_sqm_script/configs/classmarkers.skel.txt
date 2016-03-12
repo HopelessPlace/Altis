@@ -1900,8 +1900,45 @@
 			type="Empty";
 			angle=240;
 		};
+
+		//
+		// Athira Market NPCs Markers
+		//
+		class Item234
+		{
+			position[]={14071.091,27.438915,18684.191};
+			name="athira_market_civ_car_1";
+			type="Empty";
+			angle=240;
+		};
+		
+		class Item235
+		{
+			position[]={14062.858,27.800314,18675.926};
+			name="athira_market_civ_truck_1";
+			type="Empty";
+			angle=335;
+		};
+		
+		class Item236
+		{
+			position[]={14077.275,27.888754,18667.631};
+			name="athira_market_civ_car_2";
+			type="Empty";
+			angle=340;
+		};
+
+		class Item237
+		{
+			position[]={14025.464,26.346397,18656.242};
+			name="athira_market_map_marker";
+			type="c_unknown";
+			colorName="ColorGreen";
+			a=2;
+			b=2;
+		};
 		
 		//
 		// XOXO Class Marker Item Counter
 		//
-		items=234;
+		items=238;
