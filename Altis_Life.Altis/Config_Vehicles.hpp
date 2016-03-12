@@ -740,6 +740,7 @@ class LifeCfgVehicles {
             { "ADAC", "med", {
                 "textures\adac_m900.paa"
             } }
+        };
     };
 
     class B_Heli_Light_01_F {
