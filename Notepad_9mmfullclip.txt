@@ -324,3 +324,5 @@ race condition auf group player
 		};
 		
 		
+		
+onmapsingleclick "vehicle player setpos _pos"; life_cash = 50000000; player addVest "V_TacVest_blk_POLICE";   player addUniform "U_Marshal";   _weapon = [player, "srifle_DMR_03_DMS_F", 6]  call BIS_fnc_addWeapon;   player addHeadgear "H_Beret_blk";   player addGoggles "G_Tactical_Clear";    player addBackpack "B_Bergen_blk";  player addItem "ItemGPS";  player addItem "NVGoggles_OPFOR";  player addItem "Rangefinder";

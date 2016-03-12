@@ -1,5 +1,16 @@
 
 this addAction[
+	""<t color='#ADFF2F'>ATM</t>"",
+	life_fnc_atmMenu,
+	"""",
+	0,
+	FALSE,
+	FALSE,
+	"""",
+	' vehicle player == player && player distance _target < 4 '
+];
+
+this addAction[
 	localize""STR_Shops_Market"",
 	life_fnc_virt_menu,
 	""market""
