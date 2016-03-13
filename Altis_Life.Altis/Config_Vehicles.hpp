@@ -97,7 +97,8 @@ class CarShops {
         side = "civ";
         vehicles[] = {
             { "B_Heli_Light_01_F", 253000, { "pilot" }, { "", "", -1 } },
-            { "O_Heli_Light_02_unarmed_F", 750000, { "pilot" }, { "", "", -1 } }
+            { "O_Heli_Light_02_unarmed_F", 750000, { "pilot" }, { "", "", -1 } },
+			{ "O_Heli_Transport_04_box_F", 1500000, { "pilot" }, { "", "", -1 } }
         };
     };
 
@@ -817,6 +818,14 @@ class LifeCfgVehicles {
         };
     };
 
+    class O_Heli_Transport_04_box_F {
+        vItemSpace = 300;
+        storageFee[] = { 55000, 0, 22000, 0 };
+        garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 375000;
+    };
+	
     class I_Heli_light_03_unarmed_F {
         vItemSpace = 210;
         storageFee[] = { 55000, 0, 22000, 0 };

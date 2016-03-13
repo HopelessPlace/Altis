@@ -99,7 +99,7 @@
 		class Item13
 		{
 			position[]={23823.781,3.1900001,18601.668};
-			name="salt_mine";
+			name="salt_1";
 			text="@STR_MAR_Salt_Mine";
 			type="mil_triangle";
 			colorName="ColorBrown";
@@ -219,7 +219,7 @@
 		class Item28
 		{
 			position[]={4412.5562,37.095924,12605.266};
-			name="copper_mine";
+			name="lead_1";
 			text="@STR_MAR_Copper_Mine";
 			type="mil_triangle";
 			colorName="ColorBrown";
@@ -266,7 +266,7 @@
 		class Item34
 		{
 			position[]={18478.988,25.055317,14297.403};
-			name="diamond_mine";
+			name="diamond_1";
 			text="@STR_MAR_Diamond_Mine";
 			type="mil_triangle";
 			colorName="ColorBrown";
@@ -950,7 +950,7 @@
 		class Item120
 		{
 			position[]={9530.3555,127.03247,15077.41};
-			name="copper_mine_1";
+			name="copper_mine_processing";
 			text="@STR_MAR_Copper_Processing";
 			type="mil_box";
 			colorName="ColorBrown";
