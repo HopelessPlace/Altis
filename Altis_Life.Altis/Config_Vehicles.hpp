@@ -577,8 +577,8 @@ class LifeCfgVehicles {
                 "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
             }},
             { "Red Bull", "civ", {
-                "textures\civ_zamak_0.jpg",
-                "textures\civ_zamak_1.jpg"
+                "textures\civ_zamak_redbull_0.jpg",
+                "textures\civ_zamak_redbull_1.jpg"
             } },
             { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
