@@ -121,9 +121,9 @@ class Clothing {
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
             { "H_Cap_police", "Polizei Cap", 50, { "", "", -1 } },
-            { "H_HelmetB_plain_mcamo", "", 75, { "life_coplevel", "SCALAR", 1 } },
-            { "H_Booniehat_mcamo", "", 120, { "life_coplevel", "SCALAR", 1 } },
-            { "H_MilCap_mcamo", "", 100, { "life_coplevel", "SCALAR", 2 } },
+            { "H_HelmetB_plain_mcamo", "", 75, { "life_coplevel", "SCALAR", 5 } },
+            { "H_Booniehat_mcamo", "", 120, { "life_coplevel", "SCALAR", 5 } },
+            { "H_MilCap_mcamo", "", 100, { "life_coplevel", "SCALAR", 5 } },
 	    { "H_Beret_Colonel", "MEK Einsatzleiter", 100, { "life_coplevel", "SCALAR", 6 } },
 	    { "H_Beret_blk_POLICE", "MEK", 100, { "life_coplevel", "SCALAR", 5 } }
         };
