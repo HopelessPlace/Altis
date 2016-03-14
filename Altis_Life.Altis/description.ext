@@ -27,6 +27,9 @@ corpseRemovalMaxTime = 9999;
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "Config_Master.hpp"
+#include "infiSTAR_AdminMenu.hpp"
+
+
 
 class RscTitles {
 	#include "dialog\progress.hpp"
