@@ -4089,6 +4089,10 @@
       <Portuguese>Treinamento Rebelde</Portuguese>
       <Polish>Trening rebelianta</Polish>
     </Key>
+    <Key ID="STR_License_DHS">
+      <Original>DHS Clan License</Original>
+      <German>DHS Mitgliedslizenz</German>
+    </Key>
     <Key ID="STR_License_Truck">
       <Original>Truck License</Original>
       <German>LKW-Führerschein</German>

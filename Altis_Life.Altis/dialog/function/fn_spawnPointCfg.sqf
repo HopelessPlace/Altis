@@ -28,6 +28,13 @@ switch (_side) do
 		_return = [];
 		
 		//
+		// [DHS]
+		//
+		if (license_civ_dhs) then {
+			_return pushBack ["thronos_spawn_1", "DHS Basis", "\a3\ui_f\data\map\MapControl\chapel_ca.paa"];
+		};
+		
+		//
 		// XOXO player houses
 		//
 		if(count life_houses > 0) then {
