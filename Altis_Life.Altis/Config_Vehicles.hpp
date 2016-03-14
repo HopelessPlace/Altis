@@ -85,8 +85,8 @@ class CarShops {
             { "C_Offroad_01_F", 5000, { "" }, { "life_coplevel", "SCALAR", 2 } },
             { "C_SUV_01_F", 20000, { "" }, { "life_coplevel", "SCALAR", 3 } },
             { "C_Hatchback_01_sport_F", 30000, { "" }, { "life_coplevel", "SCALAR", 4 } },
-            { "B_MRAP_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 6 } },
-            { "B_MRAP_01_hmg_F", 750000, { "" }, { "life_coplevel", "SCALAR", 6 } }
+            //{ "B_MRAP_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 6 } },
+            //{ "B_MRAP_01_hmg_F", 750000, { "" }, { "life_coplevel", "SCALAR", 6 } }
         };
     };
 
