@@ -36,6 +36,8 @@ rm -vf HOP44_Life.Altis.pbo*
 	-pack "D:\\CYGWIN_RELEASES\\${RELEASE}\\${DATESTAMP}\\HOP44_Life.Altis" \
 	"D:\\CYGWIN_RELEASES\\${RELEASE}\\${DATESTAMP}\\HOP44_Life.Altis.pbo"
 
+sync
+	
 #
 # life_server.pbo
 #
@@ -51,5 +53,19 @@ rm -vf life_server.pbo*
 
 sync
 
-"${FILEZILLA}" --site="0/altislife" --local="D:\\CYGWIN_RELEASES\\${RELEASE}\\${DATESTAMP}"
+#
+# update development server
+#
+rsync -Pavpx \
+	"${RELEASE_DIRECTORY}/HOP44_Life.Altis.pbo" \
+	"steam@altisliferpg.xoreaxeax.de:/home/steam/Steam/steamapps/common/Arma\ 3\ Server/mpmissions/."
+
+rsync -Pavpx \
+        "${RELEASE_DIRECTORY}/life_server.pbo" \
+        "steam@altisliferpg.xoreaxeax.de:/home/steam/Steam/steamapps/common/Arma\ 3\ Server/@life_server/addons/."
+
+#
+# restart development server with new mission
+#
+ssh steam@altisliferpg.xoreaxeax.de -t make restart
 

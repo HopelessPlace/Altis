@@ -326,3 +326,29 @@ race condition auf group player
 		
 		
 onmapsingleclick "vehicle player setpos _pos"; life_cash = 50000000; player addVest "V_TacVest_blk_POLICE";   player addUniform "U_Marshal";   _weapon = [player, "srifle_DMR_03_DMS_F", 6]  call BIS_fnc_addWeapon;   player addHeadgear "H_Beret_blk";   player addGoggles "G_Tactical_Clear";    player addBackpack "B_Bergen_blk";  player addItem "ItemGPS";  player addItem "NVGoggles_OPFOR";  player addItem "Rangefinder";
+
+funktioniert nicht:
+
+this addAction[
+	format[
+		""%1 ($%2)"",
+		localize (getText(missionConfigFile >> ""Licenses"" >> ""dhs"" >> ""displayName"")),
+		[(getNumber(missionConfigFile >> ""Licenses"" >> ""dhs"" >> ""price""))] call life_fnc_numberText
+	],
+	life_fnc_buyLicense,
+	""dhs"",
+	0,
+	false,
+	false,
+	"""",
+		' !license_civ_dhs && playerSide == civilian && {group player getVariable ""gang_name""} == ""DHS""'
+];
+
+
+das group player objekt wird irgendwie lazy geladen, das ist kacke weil es die spawn selection zerhaut (die liegen dann uebereinander)
+
+		if ((group player getVariable "gang_name") == "DHS") then {
+			_return pushBack ["thronos_spawn_1", "DHS Basis", "\a3\ui_f\data\map\MapControl\chapel_ca.paa"];
+		};
+		
+		
