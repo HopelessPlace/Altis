@@ -1,58 +1,8 @@
 /*
-	File: infiSTAR_AdminMenu.hpp
-	Author: GRIMandinfiSTAR
-	Contact: bruno.marcetic@gmail.com or infiSTAR23@gmail.com // www.infiSTAR.de
-	Antihack & AdminTools - ChristianLorenzen - www.infiSTAR.de-License: (CC)
-	#2416
+Antihack & AdminTools - Christian Lorenzen - www.infiSTAR.de
+#2416
 */
-class RscTextInfi
-{
-access=0;
-idc=-1;
-type=0;
-style=0x00;
-linespacing=1;
-colorBackground[]={0,0,0,0};
-colorText[]={0.84,0.07,0,1};
-shadow=1;
-font="PuristaBold";
-sizeex=0.0400;
-fixedWidth=0;
-};
-
-class RscButtonInfi
-{
-access=0;
-idc=-1;
-type=1;
-text="";
-action="";
-colorText[]={1,1,1,0.9};
-colorDisabled[]={0.6,0.1,0.3,0};
-colorBackground[]={0,0,0,0.8};
-colorBackgroundDisabled[]={0,0.0,0};
-colorBackgroundActive[]={0.15,0.35,0.55,0.7};
-colorFocused[]={0.58,0.05,0,0.7};
-colorShadow[]={0.023529,0,0.0313725,1};
-colorBorder[]={0.023529,0,0.0313725,1};
-soundEnter[]={"\A3\ui_f\data\sound\RscButtonMenu\soundEnter",0.09,1};
-soundPush[]={"\A3\ui_f\data\sound\RscButtonMenu\soundPush",0.09,1};
-soundClick[]={"\A3\ui_f\data\sound\RscButtonMenu\soundClick",0.09,1};
-soundEscape[]={"\A3\ui_f\data\sound\RscButtonMenu\soundEscape",0.09,1};
-style=2;
-shadow=0;
-font="PuristaMedium";
-sizeEx=0.02921;
-offsetX=0.003;
-offsetY=0.003;
-offsetPressedX=0.002;
-offsetPressedY=0.002;
-borderSize=0;
-};
-
-
-class RscListBoxInfi
-{
+class RscListBox_infiSTAR {
 access=0;
 type=5;
 style=0;
@@ -78,7 +28,6 @@ shadow=0;
 colorDisabled[]={1,1,1,0.25};
 border=false;
 borderSize=0;
-
 class ScrollBar
 {
 arrowEmpty="#(argb,8,8,3)color(1,1,1,1)";
@@ -101,12 +50,24 @@ border="#(argb,8,8,3)color(1,1,1,1)";
 shadow=0;
 };
 };
-class RscEditInfi
-{
+class RscText_infiSTAR {
+access=0;
+idc=-1;
+type=0;
+style=0;
+linespacing=1;
+colorBackground[]={0,0,0,0};
+colorText[]={0.84,0.07,0,1};
+shadow=1;
+font="PuristaBold";
+sizeex=0.0400;
+fixedWidth=0;
+};
+class RscEdit_infiSTAR {
 access=0;
 type=2;
-style=0x00+64;
-colorBackground[]={0,0,0,0};
+style=0;
+colorBackground[]={0,0,0,0.6};
 colorText[]={1,1,1,1};
 colorSelection[]={1,1,1,0.25};
 colorDisabled[]={1,1,1,0};
@@ -117,703 +78,342 @@ text="";
 size=0.2;
 shadow=0;
 };
-class RscMapControlInfi
-{
+class RscButton_infiSTAR {
 access=0;
-idc=11;
-type=101;
-style=0x30;
-
-colorOutside[]={0,0,0,1};
-colorRailWay[]={0.8,0.2,0,1};
-colorTracks[]={0.84,0.76,0.65,0.15};
-colorRoads[]={0.7,0.7,0.7,1};
-colorMainRoads[]={0.9,0.5,0.3,1};
-colorTracksFill[]={0.84,0.76,0.65,1};
-colorRoadsFill[]={1,1,1,1};
-colorMainRoadsFill[]={1,0.6,0.4,1};
-colorGrid[]={0.1,0.1,0.1,0.6};
-colorGridMap[]={0.1,0.1,0.1,0.6};
-colorBackground[]={1.00,1.00,1.00,1.00};
-colorText[]={0.00,0.00,0.00,1.00};
-colorSea[]={0.56,0.80,0.98,0.50};
-colorForest[]={0.60,0.80,0.20,0.50};
-colorRocks[]={0.50,0.50,0.50,0.50};
-colorCountlines[]={0.65,0.45,0.27,0.50};
-colorMainCountlines[]={0.65,0.45,0.27,1.00};
-colorCountlinesWater[]={0.00,0.53,1.00,0.50};
-colorMainCountlinesWater[]={0.00,0.53,1.00,1.00};
-colorForestBorder[]={0.40,0.80,0.00,1.00};
-colorRocksBorder[]={0.50,0.50,0.50,1.00};
-colorPowerLines[]={0.00,0.00,0.00,1.00};
-colorNames[]={0.00,0.00,0.00,1.00};
-colorInactive[]={1.00,1.00,1.00,0.50};
-colorLevels[]={0.00,0.00,0.00,1.00};
-maxSatelliteAlpha=0.85;
-alphaFadeStartScale=0.35;
-alphaFadeEndScale=0.4;
-
-
-font="TahomaB";
-sizeEx=0.040000;
-moveOnEdges=0;
-
-fontLabel="TahomaB";
-sizeExLabel=0.02;
-fontGrid="TahomaB";
-sizeExGrid=0.02;
-fontUnits="TahomaB";
-sizeExUnits=0.02;
-fontNames="TahomaB";
-sizeExNames=0.02;
-fontInfo="TahomaB";
-sizeExInfo=0.02;
-fontLevel="TahomaB";
-sizeExLevel=0.02;
-
-ptsPerSquareSea=6;
-ptsPerSquareTxt=8;
-ptsPerSquareCLn=8;
-ptsPerSquareExp=8;
-ptsPerSquareCost=8;
-ptsPerSquareFor="4.0f";
-ptsPerSquareForEdge="10.0f";
-ptsPerSquareRoad=2;
-ptsPerSquareObj=10;
-scaleMin=0.001;
-scaleMax=1;
-
-text="#(argb,8,8,3)color(1,1,1,1)";
-showCountourInterval=2;
-scaleDefault=0.1;
-onMouseButtonClick="";
-onMouseButtonDblClick="";
-
-class ActiveMarker{
-color[]={0.30,0.10,0.90,1.00};
-size=50;
-};
-class Bunker{
-icon="\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
-color[]={0.00,0.35,0.70,1.00};
-size=14;
-importance="1.5*14*0.05";
-coefMin=0.25;
-coefMax=4.00;
-};
-class Bush{
-icon="\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
-color[]={0.55,0.64,0.43,1.00};
-size=14;
-importance="0.2*14*0.05";
-coefMin=0.25;
-coefMax=4.00;
-};
-class BusStop{
-icon="\A3\ui_f\data\map\mapcontrol\busstop_ca.paa";
-color[]={0.00,0.00,1.00,1.00};
-size=10;
-importance="1*10*0.05";
-coefMin=0.25;
-coefMax=4.00;
-};
-class Command{
-icon="#(argb,8,8,3)color(1,1,1,1)";
-color[]={0.00,0.00,0.00,1.00};
-size=18;
-importance=1.00;
-coefMin=1.00;
-coefMax=1.00;
-};
-class CustomMark
-{
-color[]={0,0,0,1};
-icon="\A3\ui_f\data\map\mapcontrol\custommark_ca.paa";
-size=24;
-importance=1;
-coefMin=1;
-coefMax=1;
-};
-class Cross{
-icon="\A3\ui_f\data\map\mapcontrol\Cross_CA.paa";
-color[]={0.00,0.35,0.70,1.00};
-size=16;
-importance="0.7*16*0.05";
-coefMin=0.25;
-coefMax=4.00;
-};
-class Fortress{
-icon="\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
-color[]={0.00,0.35,0.70,1.00};
-size=16;
-importance="2*16*0.05";
-coefMin=0.25;
-coefMax=4.00;
-};
-class Fuelstation{
-icon="\A3\ui_f\data\map\mapcontrol\fuelstation_ca.paa";
-color[]={1.00,0.35,0.35,1.00};
-size=16;
-importance="2*16*0.05";
-coefMin=0.75;
-coefMax=4.00;
-};
-class Fountain{
-icon="\A3\ui_f\data\map\mapcontrol\fountain_ca.paa";
-color[]={0.00,0.35,0.70,1.00};
-size=12;
-importance="1*12*0.05";
-coefMin=0.25;
-coefMax=4.00;
-};
-class Hospital{
-icon="\A3\ui_f\data\map\mapcontrol\hospital_ca.paa";
-color[]={0.78,0.00,0.05,1.00};
-size=16;
-importance="2*16*0.05";
-coefMin=0.50;
-coefMax=4;
-};
-class Chapel{
-icon="\A3\ui_f\data\map\mapcontrol\chapel_ca.paa";
-color[]={0.00,0.35,0.70,1.00};
-size=16;
-importance="1*16*0.05";
-coefMin=0.90;
-coefMax=4.00;
-};
-class Church{
-icon="\A3\ui_f\data\map\mapcontrol\church_ca.paa";
-color[]={0.00,0.35,0.70,1.00};
-size=16;
-importance="2*16*0.05";
-coefMin=0.90;
-coefMax=4.00;
-};
-class Lighthouse{
-icon="\A3\ui_f\data\map\mapcontrol\lighthouse_ca.paa";
-color[]={0.78,0.00,0.05,1.00};
-size=20;
-importance="3*16*0.05";
-coefMin=0.90;
-coefMax=4.00;
-};
-class Quay{
-icon="\A3\ui_f\data\map\mapcontrol\quay_ca.paa";
-color[]={0.00,0.35,0.70,1.00};
-size=16;
-importance="2*16*0.05";
-coefMin=0.50;
-coefMax=4.00;
-};
-class Rock{
-icon="\A3\ui_f\data\map\mapcontrol\rock_ca.paa";
-color[]={0.35,0.35,0.35,1.00};
-size=12;
-importance="0.5*12*0.05";
-coefMin=0.25;
-coefMax=4.00;
-};
-class Ruin{
-icon="\A3\ui_f\data\map\mapcontrol\ruin_ca.paa";
-color[]={0.78,0.00,0.05,1.00};
-size=16;
-importance="1.2*16*0.05";
-coefMin=1.00;
-coefMax=4.00;
-};
-class Stack{
-icon="\A3\ui_f\data\map\mapcontrol\stack_ca.paa";
-color[]={0.00,0.35,0.70,1.00};
-size=20;
-importance="2*16*0.05";
-coefMin=0.90;
-coefMax=4.00;
-};
-class Tree{
-icon="\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
-color[]={0.55,0.64,0.43,1.00};
-size=12;
-importance="0.9*16*0.05";
-coefMin=0.25;
-coefMax=4.00;
-};
-class SmallTree{
-icon="\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
-color[]={0.55,0.64,0.43,1.00};
-size=12;
-importance="0.6*12*0.05";
-coefMin=0.25;
-coefMax=4.00;
-};
-class Tourism{
-icon="\A3\ui_f\data\map\mapcontrol\tourism_ca.paa";
-color[]={0.78,0.00,0.05,1.00};
-size=16;
-importance="1*16*0.05";
-coefMin=0.70;
-coefMax=4.00;
-};
-class Transmitter{
-icon="\A3\ui_f\data\map\mapcontrol\transmitter_ca.paa";
-color[]={0.00,0.35,0.70,1.00};
-size=20;
-importance="2*16*0.05";
-coefMin=0.90;
-coefMax=4.00;
-};
-class ViewTower{
-icon="\A3\ui_f\data\map\mapcontrol\viewtower_ca.paa";
-color[]={0.00,0.35,0.70,1.00};
-size=16;
-importance="2.5*16*0.05";
-coefMin=0.50;
-coefMax=4.00;
-};
-class Watertower{
-icon="\A3\ui_f\data\map\mapcontrol\watertower_ca.paa";
-color[]={0.00,0.35,0.70,1.00};
-size=32;
-importance="1.2*16*0.05";
-coefMin=0.90;
-coefMax=4.00;
-};
-class Waypoint{
-icon="\A3\ui_f\data\map\mapcontrol\waypoint_ca.paa";
-color[]={0.00,0.00,0.00,1.00};
-size=24;
-importance=1.00;
-coefMin=1.00;
-coefMax=1.00;
-};
-class WaypointCompleted{
-icon="\A3\ui_f\data\map\mapcontrol\waypointCompleted_ca.paa";
-color[]={0.00,0.00,0.00,1.00};
-size=24;
-importance=1.00;
-coefMin=1.00;
-coefMax=1.00;
-};
-class Task
-{
-colorCreated[]={1,1,1,1};
-colorCanceled[]={0.7,0.7,0.7,1};
-colorDone[]={0.7,1,0.3,1};
-colorFailed[]={1,0.3,0.2,1};
-color[]={"(profilenamespace getVariable['IGUI_TEXT_RGB_R',0])","(profilenamespace getVariable['IGUI_TEXT_RGB_G',1])","(profilenamespace getVariable['IGUI_TEXT_RGB_B',1])","(profilenamespace getVariable['IGUI_TEXT_RGB_A',0.8])"};
-icon="\A3\ui_f\data\map\mapcontrol\taskIcon_CA.paa";
-iconCreated="\A3\ui_f\data\map\mapcontrol\taskIconCreated_CA.paa";
-iconCanceled="\A3\ui_f\data\map\mapcontrol\taskIconCanceled_CA.paa";
-iconDone="\A3\ui_f\data\map\mapcontrol\taskIconDone_CA.paa";
-iconFailed="\A3\ui_f\data\map\mapcontrol\taskIconFailed_CA.paa";
-size=27;
-importance=1;
-coefMin=1;
-coefMax=1;
-};
-class Power
-{
-icon="\A3\ui_f\data\map\mapcontrol\power_CA.paa";
-size=24;
-importance=1;
-coefMin=0.85;
-coefMax=1;
-color[]={1,1,1,1};
-};
-class Powersolar
-{
-icon="\A3\ui_f\data\map\mapcontrol\powersolar_CA.paa";
-size=24;
-importance=1;
-coefMin=0.85;
-coefMax=1;
-color[]={1,1,1,1};
-};
-class Powerwave
-{
-icon="\A3\ui_f\data\map\mapcontrol\powerwave_CA.paa";
-size=24;
-importance=1;
-coefMin=0.85;
-coefMax=1;
-color[]={1,1,1,1};
-};
-class Powerwind
-{
-icon="\A3\ui_f\data\map\mapcontrol\powerwind_CA.paa";
-size=24;
-importance=1;
-coefMin=0.85;
-coefMax=1;
-color[]={1,1,1,1};
-};
-class Shipwreck
-{
-icon="\A3\ui_f\data\map\mapcontrol\shipwreck_CA.paa";
-size=24;
-importance=1;
-coefMin=0.85;
-coefMax=1;
-color[]={1,1,1,1};
-};
+idc=-1;
+type=1;
+style=0;
+text="";
+action="";
+colorText[]={1,1,1,0.9};
+colorDisabled[]={0.6,0.1,0.3,0};
+colorBackground[]={0,0,0,0.8};
+colorBackgroundDisabled[]={0,0.0,0};
+colorBackgroundActive[]={0.15,0.35,0.55,0.7};
+colorFocused[]={0.58,0.05,0,0.7};
+colorShadow[]={0.023529,0,0.0313725,1};
+colorBorder[]={0.023529,0,0.0313725,1};
+soundEnter[]={"\A3\ui_f\data\sound\RscButtonMenu\soundEnter",0.09,1};
+soundPush[]={"\A3\ui_f\data\sound\RscButtonMenu\soundPush",0.09,1};
+soundClick[]={"\A3\ui_f\data\sound\RscButtonMenu\soundClick",0.09,1};
+soundEscape[]={"\A3\ui_f\data\sound\RscButtonMenu\soundEscape",0.09,1};
+shadow=0;
+font="PuristaMedium";
+sizeEx=0.02921;
+offsetX=0.003;
+offsetY=0.003;
+offsetPressedX=0.002;
+offsetPressedY=0.002;
+borderSize=0;
 };
 class RscHTML_infiSTAR {
-colorBackground[]={0,0,0,0.25};
-colorText[] = {0.8784, 0.8471, 0.651, 1.0};
-colorLink[] = {0.8784, 0.8471, 0.651, 1.0};
-colorBold[] = {0.8784, 0.8471, 0.651, 1.0};
-colorPicture[] = {0.8784, 0.8471, 0.651, 1.0};
-colorPictureLink[] = {0.8784, 0.8471, 0.651, 1.0};
-colorPictureSelected[] = {0.8784, 0.8471, 0.651, 1.0};
-colorPictureBorder[] = {0.8784, 0.8471, 0.651, 1.0};
+colorText[]={1,1,1,1};
+colorBold[]={1,1,1,0.75};
+colorLink[]={"63/255","212/255","252/255",1};
+colorLinkActive[]={"63/255","212/255","252/255",0.75};
+colorBackground[]={0,0,0,0};
+colorPicture[]={1,1,1,1};
+colorPictureBorder[]={0,0,0,0};
+colorPictureLink[]={1,1,1,1};
+colorPictureSelected[]={1,1,1,1};
+hppversion=3;
 filename="";
-colorLinkActive[] = {1, 0.537, 0, 1};
-sizeEx = 0.03921;
-type = 9;
+sizeEx=0.03921;
+type=9;
 style=0;
-prevPage = "\ca\ui\data\arrow_left_ca.paa";
-nextPage = "\ca\ui\data\arrow_right_ca.paa";
-shadow = 2;
-class H1 {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.03921 * 6;
-align = "left";
+prevPage="\ca\ui\data\arrow_left_ca.paa";
+nextPage="\ca\ui\data\arrow_right_ca.paa";
+shadow=2;
+class def {
+font="PuristaMedium";
+fontBold="PuristaBold";
+align="left";
 };
-class H2 {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.03921 * 5;
-align = "left";
+class H1:def {
+sizeEx="38 * pixelH";
 };
-class H3 {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.03921 * 4;
-align = "left";
+class H2:def {
+sizeEx="32 * pixelH";
 };
-class H4 {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.03921 * 3;
-align = "left";
+class H3:def {
+sizeEx="26 * pixelH";
 };
-class H5 {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.03921 * 2;
-align = "left";
+class H4:def {
+sizeEx="20 * pixelH";
 };
-class H6 {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.03921;
-align = "left";
+class H5:def {
+sizeEx="17 * pixelH";
 };
-class P {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.02921;
-align = "left";
+class H6:def {
+sizeEx="15 * pixelH";
+};
+class P:def {
+sizeEx="18 * pixelH";
 };
 };
-class infiSTAR_AdminMenu {
-idd=-1338;
-onLoad="uiNamespace setVariable ['RscDisplay_infiSTAR_AdminMenu', _this select 0]";
-onUnload="uiNamespace setVariable ['RscDisplay_infiSTAR_AdminMenu', displayNull]";
+class RscEdit_infiSTAR_multi:RscEdit_infiSTAR {
+idc=1339;
+x=0.1 * safezoneW + safezoneX;
+y=0.038 * safezoneH + safezoneY;
+w=0.658333 * safezoneW;
+h=(0.143 * safezoneH)*3;
+autocomplete="scripting";
+font="EtelkaMonospacePro";
+colorText[]={0.95,0.95,0.95,1};
+style=16;
+sizeEx="0.65 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+show=1;
+}
+class infiSTAR_CHAT
+{
+idd=-1340;
 movingenable=false;
-enablesimulation=true;
+onKeyDown="call fnc_chat_onKeyDown;";
+class controls
+{
+class RscListbox_1500: RscListBox_infiSTAR
+{
+idc = 1500;
+x = 0.133846 * safezoneW + safezoneX;
+y = 0.0929318 * safezoneH + safezoneY;
+w = 0.165027 * safezoneW;
+h = 0.792133 * safezoneH;
+onLoad="uiNamespace setVariable ['chat_playerlist', _this select 0];call fnc_fill_chat_playerlist;(_this select 0) lbSetCurSel 0;";
+onLBSelChanged="call fnc_chat_onLBSelChanged;";
+};
+class RscListbox_1501: RscListBox_infiSTAR
+{
+idc = 1501;
+x = 0.298873 * safezoneW + safezoneX;
+y = 0.0929318 * safezoneH + safezoneY;
+w = 0.505396 * safezoneW;
+h = 0.71512 * safezoneH;
+sizeEx=0.03;
+onLoad="uiNamespace setVariable ['chat_msgbox', _this select 0];call fnc_fill_chat_history;";
+};
+class RscEdit_1401: RscEdit_infiSTAR_multi
+{
+idc = 1401;
+x = 0.298873 * safezoneW + safezoneX;
+y = 0.808052 * safezoneH + safezoneY;
+w = 0.505396 * safezoneW;
+h = 0.0770129 * safezoneH;
+autocomplete="";
+onLoad="uiNamespace setVariable ['chat_inputfield', _this select 0];";
+};
+class RscButton_1600: RscButton_infiSTAR
+{
+idc = 1600;
+text = "send";
+x = 0.752698 * safezoneW + safezoneX;
+y = 0.885064 * safezoneH + safezoneY;
+w = 0.051571 * safezoneW;
+h = 0.0330055 * safezoneH;
+action = "call fnc_chat_send;";
+};
+class RscButton_1601: RscButton_infiSTAR
+{
+idc = 1601;
+text = "refresh list";
+x = 0.133846 * safezoneW + safezoneX;
+y = 0.885064 * safezoneH + safezoneY;
+w = 0.051571 * safezoneW;
+h = 0.0330055 * safezoneH;
+action = "call fnc_fill_chat_playerlist;";
+};
+class RscText_1000: RscText_infiSTAR
+{
+idc = 1000;
+x = 0.133846 * safezoneW + safezoneX;
+y = 0.0599262 * safezoneH + safezoneY;
+w = 0.670423 * safezoneW;
+h = 0.0330055 * safezoneH;
+colorBackground[] = {0,0,0,0.4};
+text = "Chatpartner";
+onLoad="uiNamespace setVariable ['chat_text1', _this select 0];";
+};
+};
+};
+class infiSTAR_AdminMenu
+{
+idd=-1338;
+movingenable=false;
 controls[]=
 {
-infiSTAR_TXT_1000,
-infiSTAR_BTN_10,
-infiSTAR_BTN_11,
-infiSTAR_LIST_1500,
-infiSTAR_LIST_1501,
-infiSTAR_BTN_20,
-infiSTAR_BTN_21,
-infiSTAR_BTN_23,
-infiSTAR_BTN_24,
-infiSTAR_BTN_25,
-infiSTAR_MAP,
-infiSTAR_EDIT_100,
-infiSTAR_BTN_26,
-infiSTAR_BTN_27,
-infiSTAR_BTN_28,
-infiSTAR_BTN_29,
-infiSTAR_BTN_30,
-infiSTAR_BTN_31,
-infiSTAR_BTN_32,
-infiSTAR_BTN_33,
-infiSTAR_BTN_34,
-infiSTAR_BTN_35,
-infiSTAR_BTN_36,
-infiSTAR_BTN_37,
-infiSTAR_BTN_38,
+infi_TXT2,
+infi_BTN10,
+infi_BTN11,
+infi_BTN12,
+infi_LIST1500,
+infi_LIST1501,
+infi_BTN20,
+infi_BTN21,
+infi_BTN23,
+infi_BTN24,
+infi_BTN25,
+infi_EDIT1,
+infi_EDIT2,
+infi_BTN36,
+infi_BTN37,
+infi_BTN38,
 infi_HTML_1
 };
-class infiSTAR_TXT_1000:RscTextInfi
+class infi_LIST1500: RscListBox_infiSTAR
+{
+idc=1500;
+x=4.99852e-005 * safezoneW + safezoneX;
+y=0.0617197 * safezoneH + safezoneY;
+w=0.189063 * safezoneW;
+h=0.938333 * safezoneH;
+};
+class infi_LIST1501: RscListBox_infiSTAR
+{
+idc=1501;
+x=0.188975 * safezoneW + safezoneX;
+y=0.0617197 * safezoneH + safezoneY;
+w=0.344271 * safezoneW;
+h=0.945999 * safezoneH;
+};
+class infi_EDIT1: RscEdit_infiSTAR
+{
+idc=100;
+text="Search";
+x=0.1964 * safezoneW + safezoneX;
+y=0.125933 * safezoneH + safezoneY;
+w=0.326563 * safezoneW;
+h=0.044 * safezoneH;
+};
+class infi_EDIT2: RscEdit_infiSTAR_multi
+{
+idc=103;
+show=0;
+};
+class infi_TXT2: RscText_infiSTAR
 {
 idc=2;
-
 text="infiSTAR.de";
-x=-4.16885e-005*safezoneW+safezoneX;
-y=-5.99921e-005*safezoneH+safezoneY;
-w=1*safezoneW;
-h=0.0341667*safezoneH;
+x=-5.31323e-005 * safezoneW + safezoneX;
+y=-7.50085e-005 * safezoneH + safezoneY;
+w=1 * safezoneW;
+h=0.0341667 * safezoneH;
 colorText[]={1,1,1,0.9};
 colorBackground[]={0.56,0.04,0.04,1};
 };
-class infiSTAR_BTN_10:RscButtonInfi
+class infi_HTML_1: RscHTML_infiSTAR
+{
+idc=1;
+x=0.535 * safezoneW + safezoneX;
+y=0.06 * safezoneH + safezoneY;
+w=0.40 * safezoneW;
+h=0.35 * safezoneH;
+onLoad="uiNamespace setVariable ['RscHTML_infiSTAR_Admin', _this select 0]";
+onUnload="uiNamespace setVariable ['RscHTML_infiSTAR_Admin', displayNull]";
+};
+class infi_BTN10: RscButton_infiSTAR
 {
 idc=10;
-
-text="Range";
-x=0.01875*safezoneW+safezoneX;
-y=0.038*safezoneH+safezoneY;
-w=0.0625001*safezoneW;
-h=0.02*safezoneH;
+text="Alphabet";
+x=0.005 + safezoneX;
+y=0.0379694 * safezoneH + safezoneY;
+w=0.06 * safezoneW;
+h=0.02 * safezoneH;
+action="SortRangePlease=nil;SortAlphaPlease=true;SortGroupsPlease=nil;[] call fnc_fill_infiSTAR_Player;[] call fnc_setFocus;";
 };
-class infiSTAR_BTN_11:RscButtonInfi
+class infi_BTN11: RscButton_infiSTAR
 {
 idc=11;
-
-text="Alphabet";
-x=0.104687*safezoneW+safezoneX;
-y=0.038*safezoneH+safezoneY;
-w=0.0625001*safezoneW;
-h=0.02*safezoneH;
+text="Groups";
+x=0.01 + safezoneX + (0.06 * safezoneW);
+y=0.0379694 * safezoneH + safezoneY;
+w=0.06 * safezoneW;
+h=0.02 * safezoneH;
+action="SortAlphaPlease=nil;SortRangePlease=nil;SortGroupsPlease=true;[] call fnc_fill_infiSTAR_Player;[] call fnc_setFocus;";
 };
-class infiSTAR_LIST_1500:RscListBoxInfi
+class infi_BTN12: RscButton_infiSTAR
 {
-idc=1500;
-
-x=0*safezoneW+safezoneX;
-y=0.0616667*safezoneH+safezoneY;
-w=0.189063*safezoneW;
-h=0.938334*safezoneH;
+idc=12;
+text="Range";
+x=0.015 + safezoneX + (0.06 * safezoneW)*2;
+y=0.0379694 * safezoneH + safezoneY;
+w=0.06 * safezoneW;
+h=0.02 * safezoneH;
+action="SortAlphaPlease=nil;SortRangePlease=true;SortGroupsPlease=nil;[] call fnc_fill_infiSTAR_Player;[] call fnc_setFocus;";
 };
-class infiSTAR_LIST_1501:RscListBoxInfi
-{
-idc=1501;
-
-x=0.189021*safezoneW+safezoneX;
-y=0.0616663*safezoneH+safezoneY;
-w=0.344271*safezoneW;
-h=0.946*safezoneH;
-};
-class infiSTAR_BTN_20:RscButtonInfi
+class infi_BTN20: RscButton_infiSTAR
 {
 idc=20;
 default="true";
-
 text="MainMenu";
-x=0.202083*safezoneW+safezoneX;
-y=0.038*safezoneH+safezoneY;
-w=0.0625001*safezoneW;
-h=0.02*safezoneH;
+x=0.202072 * safezoneW + safezoneX;
+y=0.0379694 * safezoneH + safezoneY;
+w=0.0625001 * safezoneW;
+h=0.02 * safezoneH;
 };
-class infiSTAR_BTN_21:RscButtonInfi
+class infi_BTN21: RscButton_infiSTAR
 {
 idc=21;
-
 text="SpawnMenu";
-x=0.288021*safezoneW+safezoneX;
-y=0.038*safezoneH+safezoneY;
-w=0.0625001*safezoneW;
-h=0.02*safezoneH;
+x=0.287975 * safezoneW + safezoneX;
+y=0.0379694 * safezoneH + safezoneY;
+w=0.0625001 * safezoneW;
+h=0.02 * safezoneH;
 };
-class infiSTAR_BTN_23:RscButtonInfi
+class infi_BTN23: RscButton_infiSTAR
 {
 idc=23;
-
 text="AHLog";
-x=0.373958*safezoneW+safezoneX;
-y=0.038*safezoneH+safezoneY;
-w=0.0625001*safezoneW;
-h=0.02*safezoneH;
+x=0.373981 * safezoneW + safezoneX;
+y=0.0379694 * safezoneH + safezoneY;
+w=0.0625001 * safezoneW;
+h=0.02 * safezoneH;
 };
-class infiSTAR_BTN_24:RscButtonInfi
+class infi_BTN24: RscButton_infiSTAR
 {
 idc=24;
-
 text="AdminLog";
-x=0.459896*safezoneW+safezoneX;
-y=0.038*safezoneH+safezoneY;
-w=0.0625001*safezoneW;
-h=0.02*safezoneH;
+x=0.459884 * safezoneW + safezoneX;
+y=0.0379694 * safezoneH + safezoneY;
+w=0.0625001 * safezoneW;
+h=0.02 * safezoneH;
 };
-class infiSTAR_BTN_25:RscButtonInfi
+class infi_BTN25: RscButton_infiSTAR
 {
 idc=25;
-
-text="MapOn/Off";
-x=0.763542*safezoneW+safezoneX;
-y=0.038*safezoneH+safezoneY;
-w=0.0625001*safezoneW;
-h=0.02*safezoneH;
+x=0.535 * safezoneW + safezoneX + (0.15 * safezoneW);
+y=0.0379694 * safezoneH + safezoneY;
+w=0.0625001 * safezoneW;
+h=0.02 * safezoneH;
+action="call fnc_btn_html";
 };
-class infiSTAR_MAP:RscMapControlInfi
-{
-idc=7;
-
-x=0.533333*safezoneW+safezoneX;
-y=0.0616667*safezoneH+safezoneY;
-w=0.467709*safezoneW;
-h=0.700666*safezoneH;
-};
-class infiSTAR_EDIT_100:RscEditInfi
-{
-idc=100;
-
-text="Search";
-x=0.196354*safezoneW+safezoneX;
-y=0.126*safezoneH+safezoneY;
-w=0.326563*safezoneW;
-h=0.044*safezoneH;
-};
-class infiSTAR_BTN_26:RscButtonInfi
-{
-idc=26;
-
-text="Weapon";
-x=0.207813*safezoneW+safezoneX;
-y=0.17*safezoneH+safezoneY;
-w=0.0458333*safezoneW;
-h=0.022*safezoneH;
-};
-class infiSTAR_BTN_27:RscButtonInfi
-{
-idc=27;
-
-text="Magazine";
-x=0.259375*safezoneW+safezoneX;
-y=0.17*safezoneH+safezoneY;
-w=0.0458333*safezoneW;
-h=0.022*safezoneH;
-};
-class infiSTAR_BTN_28:RscButtonInfi
-{
-idc=28;
-
-text="Backpack";
-x=0.310938*safezoneW+safezoneX;
-y=0.17*safezoneH+safezoneY;
-w=0.0458333*safezoneW;
-h=0.022*safezoneH;
-};
-class infiSTAR_BTN_29:RscButtonInfi
-{
-idc=29;
-
-text="Vest";
-x=0.3625*safezoneW+safezoneX;
-y=0.17*safezoneH+safezoneY;
-w=0.0458333*safezoneW;
-h=0.022*safezoneH;
-};
-class infiSTAR_BTN_30:RscButtonInfi
-{
-idc=30;
-
-text="Uniform";
-x=0.414063*safezoneW+safezoneX;
-y=0.17*safezoneH+safezoneY;
-w=0.0458333*safezoneW;
-h=0.022*safezoneH;
-};
-class infiSTAR_BTN_31:RscButtonInfi
-{
-idc=31;
-
-text="Tools";
-x=0.465625*safezoneW+safezoneX;
-y=0.17*safezoneH+safezoneY;
-w=0.0458333*safezoneW;
-h=0.022*safezoneH;
-};
-class infiSTAR_BTN_32:RscButtonInfi
-{
-idc=32;
-
-text="SpawnMAP";
-x=0.545833*safezoneW+safezoneX;
-y=0.786*safezoneH+safezoneY;
-w=0.06875*safezoneW;
-h=0.022*safezoneH;
-};
-class infiSTAR_BTN_33:RscButtonInfi
-{
-idc=33;
-
-text="CameraMAP";
-x=0.620313*safezoneW+safezoneX;
-y=0.786*safezoneH+safezoneY;
-w=0.06875*safezoneW;
-h=0.022*safezoneH;
-};
-class infiSTAR_BTN_34:RscButtonInfi
-{
-idc=34;
-
-text="TargetMAP";
-x=0.694792*safezoneW+safezoneX;
-y=0.786*safezoneH+safezoneY;
-w=0.06875*safezoneW;
-h=0.022*safezoneH;
-};
-class infiSTAR_BTN_35:RscButtonInfi
-{
-idc=35;
-
-text="Map/PiPFocus";
-x=0.665625*safezoneW+safezoneX;
-y=0.038*safezoneH+safezoneY;
-w=0.0802083*safezoneW;
-h=0.0203333*safezoneH;
-};
-class infiSTAR_BTN_36:RscButtonInfi
+class infi_BTN36: RscButton_infiSTAR
 {
 idc=36;
-
 text="Items";
-x=0.219271*safezoneW+safezoneX;
-y=0.082*safezoneH+safezoneY;
-w=0.0916667*safezoneW;
-h=0.033*safezoneH;
+x=0.219294 * safezoneW + safezoneX;
+y=0.0819514 * safezoneH + safezoneY;
+w=0.0916667 * safezoneW;
+h=0.0329999 * safezoneH;
 };
-class infiSTAR_BTN_37:RscButtonInfi
+class infi_BTN37: RscButton_infiSTAR
 {
 idc=37;
-
 text="Vehicles";
-x=0.316667*safezoneW+safezoneX;
-y=0.082*safezoneH+safezoneY;
-w=0.0916667*safezoneW;
-h=0.033*safezoneH;
+x=0.316644 * safezoneW + safezoneX;
+y=0.0819514 * safezoneH + safezoneY;
+w=0.0916667 * safezoneW;
+h=0.0329999 * safezoneH;
 };
-class infiSTAR_BTN_38:RscButtonInfi
+class infi_BTN38: RscButton_infiSTAR
 {
 idc=38;
-
-text="Misc";
-x=0.414063*safezoneW+safezoneX;
-y=0.082*safezoneH+safezoneY;
-w=0.0916667*safezoneW;
-h=0.033*safezoneH;
-};
-class infi_HTML_1: RscHTML_infiSTAR
-{
-idc = 1;
-x = 0.535 * safezoneW + safezoneX;
-y = 0.06 * safezoneH + safezoneY;
-w = 0.32 * safezoneW;
-h = 0.25 * safezoneH;
-colorBackground[] = {0,0,0,0};
-onLoad = "if(!isNil'HTML_LOAD_URL')then{(_this select 0) htmlLoad HTML_LOAD_URL;};";
+text="Trader";
+x=0.414097 * safezoneW + safezoneX;
+y=0.0819514 * safezoneH + safezoneY;
+w=0.0916667 * safezoneW;
+h=0.0329999 * safezoneH;
 };
 };
 class CfgCommands
 {
-	allowedHTMLLoadURIs[] = {"http://*"};
+allowedHTMLLoadURIs[]={"http://*"};
 };
