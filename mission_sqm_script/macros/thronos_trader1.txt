@@ -27,3 +27,5 @@ this addAction[
 	life_fnc_clothingMenu,
 	""bruce""
 ];
+
+this setVariable[""realname"",""DHS Supermarkt""];
