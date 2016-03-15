@@ -29,7 +29,6 @@ if(_ctrl == "goldbar" && {!(life_trunk_vehicle isKindOf "LandVehicle")}) exitWit
 // XOXO The Weed Field on the south western rebel peninsula should be worked through vehicles only!
 //
 if(_ctrl == "cannabis" && {!(life_trunk_vehicle isKindOf "LandVehicle")}) exitWith {hint "Nicht in Helikoptern transportierbar!"};
-if(_ctrl == "marijuana" && {!(life_trunk_vehicle isKindOf "LandVehicle")}) exitWith {hint "Nicht in Helikoptern transportierbar!"};
 
 if(_ctrl == "money") then
 {
