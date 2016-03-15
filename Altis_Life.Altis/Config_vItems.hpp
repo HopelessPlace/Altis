@@ -477,8 +477,8 @@ class VirtualItems {
         variable = "marijuana";
         displayName = "STR_Item_Marijuana";
         weight = 3;
-        buyPrice = 9000;
-        sellPrice = 6000;
+        buyPrice = 12000;
+        sellPrice = 9000;
         illegal = true;
         edible = -1;
         icon = "icons\ico_marijuana.paa";
