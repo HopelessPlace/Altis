@@ -5638,6 +5638,10 @@
       <Portuguese>Você recebeu seu pagamento de R$%1</Portuguese>
       <Polish>Otrzymałeś wypłatę w kwocie $%1</Polish>
     </Key>
+    <Key ID="STR_FSM_ReceivedIncrementalPay">
+      <Original>You have received a bonus of $%1</Original>
+      <German>Du hast einen Bonus in Höhe von $%1 erhalten</German>
+    </Key>
   </Package>
   <Package name="Fuel_Pump">
     <Key ID="STR_Action_Pump">

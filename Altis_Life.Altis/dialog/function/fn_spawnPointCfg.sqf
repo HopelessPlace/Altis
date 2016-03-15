@@ -8,7 +8,7 @@
 	Return:
 	[Spawn Marker,Spawn Name,Image Path]
 */
-private["_side","_return"];
+private["_side","_return","_playercash"];
 _side = [_this,0,civilian,[civilian]] call BIS_fnc_param;
 
 //Spawn Marker, Spawn Name, PathToImage
@@ -47,6 +47,8 @@ switch (_side) do
 			} foreach life_houses;
 		};
 		
+		_player_cash = life_atmbank + life_cash;
+		
 		//
 		// XOXO Rebel Spawn Points
 		//
@@ -59,18 +61,14 @@ switch (_side) do
 			//
 			// XOXO Rebel Outpost South West
 			//
-			if (life_atmbank > 599999) then {
+			if (_player_cash > 599999) then {
 				_return pushBack ["rebel_spawn_2", "Rebels SW", "\a3\ui_f\data\map\MapControl\rock_ca.paa"];
-			} else {
-				if (life_cash > 599999) then {
-					_return pushBack ["rebel_spawn_2", "Rebels SW", "\a3\ui_f\data\map\MapControl\rock_ca.paa"];
-				};
 			};
 		} else {
 			//
 			// XOXO Beginner Spawn Point
 			//
-			if (life_atmbank < 599999) then {
+			if (_player_cash < 599999) then {
 				_return pushBack ["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\ruin_ca.paa"];
 			} else {
 				_return pushBack ["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\church_ca.paa"];

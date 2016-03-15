@@ -73,6 +73,9 @@ life_istazed = false;
 life_isknocked = false;
 life_vehicles = [];
 
+life_incremental_paycheck = 0;
+life_login_time = time;
+
 /*
 	Master Array of items?
 */
