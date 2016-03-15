@@ -4825,7 +4825,7 @@
     </Key>
     <Key ID="STR_pInAct_PutInCar">
       <Original>Put in vehicle</Original>
-      <German>Ins Fahrzeug setzen</German>
+      <German>Ins FZ setzen</German>
       <French>Embarquer</French>
       <Italian>Metti nel Veicolo</Italian>
       <Portuguese>Colocar no Veículo</Portuguese>
@@ -4849,7 +4849,7 @@
     </Key>
     <Key ID="STR_pInAct_SearchPlayer">
       <Original>Search Player</Original>
-      <German>Spieler durchsuchen</German>
+      <German>S durchsuchen</German>
       <French>Fouiller Joueur</French>
       <Italian>Ricerca Giocatore</Italian>
       <Portuguese>Revistar Jogador</Portuguese>
@@ -4857,7 +4857,7 @@
     </Key>
     <Key ID="STR_pInAct_StopEscort">
       <Original>Stop Escorting</Original>
-      <German>Eskortieren stoppen</German>
+      <German>Eskort stop</German>
       <French>Arrêter Escorte</French>
       <Italian>Ferma Scorta</Italian>
       <Portuguese>Parar de Escoltar</Portuguese>
@@ -4865,7 +4865,7 @@
     </Key>
     <Key ID="STR_pInAct_Escort">
       <Original>Escort Player</Original>
-      <German>Spieler eskortieren</German>
+      <German>S eskortieren</German>
       <French>Escorter Joueur</French>
       <Italian>Scorta Giocatore</Italian>
       <Portuguese>Escoltar Jogador</Portuguese>
@@ -5016,7 +5016,7 @@
     </Key>
     <Key ID="STR_vInAct_Unflip">
       <Original>Unflip Vehicle</Original>
-      <German>Fahrzeug umdrehen</German>
+      <German>Fz umdrehen</German>
       <French>Retourner Véhicule</French>
       <Italian>Raddrizza veicolo</Italian>
       <Portuguese>Desvirar Veículo</Portuguese>
@@ -5046,7 +5046,7 @@
     </Key>
     <Key ID="STR_vInAct_Repair">
       <Original>Repair Vehicle</Original>
-      <German>Fahrzeug reparieren</German>
+      <German>Fz reparieren</German>
       <French>Réparer Véhicule</French>
       <Italian>Ripara Veicolo</Italian>
       <Portuguese>Consertar Veículo</Portuguese>
@@ -5062,7 +5062,7 @@
     </Key>
     <Key ID="STR_vInAct_SearchVehicle">
       <Original>Search Vehicle</Original>
-      <German>Fahrzeug durchsuchen</German>
+      <German>Fz durchsuchen</German>
       <French>Fouiller Véhicule</French>
       <Italian>Cerca Veicolo</Italian>
       <Portuguese>Vasculhar Veículo</Portuguese>
@@ -5074,7 +5074,7 @@
     </Key>
     <Key ID="STR_vInAct_PullOut">
       <Original>Pullout Players</Original>
-      <German>Aus Fahrzeug ziehen</German>
+      <German>Aus Fz ziehen</German>
       <French>Sortir Personnes</French>
       <Italian>Estrai Giocatore</Italian>
       <Portuguese>Retirar Jogadores</Portuguese>
@@ -5082,7 +5082,7 @@
     </Key>
     <Key ID="STR_vInAct_Impound">
       <Original>Impound Vehicle</Original>
-      <German>Fahrzeug beschlagnahmen</German>
+      <German>Fz beschlagnahmen</German>
       <French>Mise en fourrière</French>
       <Italian>Sequestra Veicolo</Italian>
       <Portuguese>Apreender Veículo</Portuguese>
