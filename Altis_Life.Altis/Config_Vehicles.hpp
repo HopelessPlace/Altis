@@ -62,7 +62,7 @@ class CarShops {
             { "B_Truck_01_transport_F", 275000, { "trucking" }, { "", "", -1 } },
             { "O_Truck_03_transport_F", 200000, { "trucking" }, { "", "", -1 } },
             { "O_Truck_03_covered_F", 250000, { "trucking" }, { "", "", -1 } },
-            { "B_Truck_01_box_F", 350000, { "trucking" }, { "", "", -1 } },
+            { "B_Truck_01_box_F", 400000, { "trucking" }, { "", "", -1 } },
             { "O_Truck_03_device_F", 450000, { "trucking" }, { "", "", -1 } }
         };
     };
@@ -366,8 +366,8 @@ class LifeCfgVehicles {
     };
 
     class B_Truck_01_box_F {
-        vItemSpace = 800;
-        storageFee[] = { 35000, 0, 0, 0 };
+        vItemSpace = 550;
+        storageFee[] = { 45000, 0, 0, 0 };
         garageSell[] = { 150000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 175000;
