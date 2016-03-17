@@ -12010,25 +12010,25 @@ class Mission {
 		};
 		
 		//
-		// vorne links
+		// vorne an der Strasse innen am Gate
 		//
 		class Item231
-		{
-			position[]={4920.6162,332.13278,21861.725};
+		{		
+			position[]={4920.1338,329.24075,21829.043};
 			name="thronos_spawn_3";
 			type="Empty";
-			angle=180;
+			angle=260;
 		};
 		
 		//
-		// vorne rechts
+		// vorne an der Strasse innen am Gate
 		//
 		class Item232
 		{
-			position[]={4935.7222,332.19809,21862.734};
+			position[]={4932.6348,329.59015,21827.637};
 			name="thronos_spawn_4";
 			type="Empty";
-			angle=180;
+			angle=260;
 		};
 		
 		//
