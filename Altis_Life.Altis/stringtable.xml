@@ -5082,11 +5082,11 @@
     </Key>
     <Key ID="STR_vInAct_Impound">
       <Original>Impound Vehicle</Original>
-      <German>Fz beschlagnahmen</German>
-      <French>Mise en fourrière</French>
-      <Italian>Sequestra Veicolo</Italian>
-      <Portuguese>Apreender Veículo</Portuguese>
-      <Polish>Usunń pojazd</Polish>
+        <German>Beschlagnahmung</German>
+        <French>Mise en fourrière</French>
+       <Italian>Sequestra Veicolo</Italian>
+    <Portuguese>Apreender Veículo</Portuguese>
+        <Polish>Usunń pojazd</Polish>
     </Key>
     <Key ID="STR_vInAct_DeviceMine">
       <Original>Mine from device</Original>
