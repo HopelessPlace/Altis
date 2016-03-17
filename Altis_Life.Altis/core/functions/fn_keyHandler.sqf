@@ -161,7 +161,7 @@ switch (_code) do {
 	case 37: {
 		// hint "EMP Konsole";
 	
-        if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player && (typeOf vehicle player) in ["B_Heli_Light_01_F"])) then {
+        if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player && (typeOf vehicle player) in ["I_Heli_light_03_unarmed_F"])) then {
 			[] call life_fnc_openEmpMenu; [_this] call life_fnc_isEmpOperator;
         };
     };
