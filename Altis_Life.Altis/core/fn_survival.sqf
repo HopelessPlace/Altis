@@ -59,8 +59,8 @@ _fnc_incremental_paycheck = {
 			_currentIncrementalPaycheck = (time - life_login_time) * 2;
 		};
 
-		if ((life_atmbank + life_cash) < 1000000) then {
-			_currentIncrementalPaycheck = (time - life_login_time);
+		if ((life_atmbank + life_cash) < 800000) then {
+			_currentIncrementalPaycheck = (time - life_login_time) * 1;
 		};		
 		
 		if ((life_atmbank + life_cash) < 2000000) then {
@@ -71,9 +71,11 @@ _fnc_incremental_paycheck = {
 			_currentIncrementalPaycheck = (time - life_login_time) * 3;
 		};
 		
-		if ((life_atmbank + life_cash) < 6000000) then {
+		if ((life_atmbank + life_cash) < 8000000) then {
 			_currentIncrementalPaycheck = (time - life_login_time) * 4;
-		} else {
+		};
+		
+		if ((life_atmbank + life_cash) < 20000000) then {
 			_currentIncrementalPaycheck = (time - life_login_time) * 10;
 		};
 		
@@ -101,7 +103,7 @@ while {true} do {
 	//
 	// XOXO incremental paycheck (this probably belongs into the finite state machine (core/fsm/client.fsm)of life client but lets see how it goes here...)
 	//
-	if((time - _incrementalPaycheckTime) > 300) then {
+	if((time - _incrementalPaycheckTime) > 600) then {
 		[] call _fnc_incremental_paycheck;
 		_incrementalPaycheckTime = time;
 	};

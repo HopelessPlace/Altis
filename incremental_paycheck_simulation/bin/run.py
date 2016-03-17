@@ -11,7 +11,7 @@ if __name__ == "__main__":
 		factor = 1
 
 	for timer in range(1,21600):
-		if timer % 300 == 0:
+		if timer % 600 == 0:
 			running_sum = running_sum + (timer * factor)
 
 	print "## total: %i " % running_sum
