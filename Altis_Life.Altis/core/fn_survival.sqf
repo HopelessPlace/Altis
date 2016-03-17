@@ -76,6 +76,8 @@ _fnc_incremental_paycheck = {
 		};
 		
 		if ((life_atmbank + life_cash) < 20000000) then {
+			_currentIncrementalPaycheck = (time - life_login_time) * 5;
+		} else {
 			_currentIncrementalPaycheck = (time - life_login_time) * 10;
 		};
 		
