@@ -36,7 +36,7 @@ player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 		//
 		// macht jeden Rucksack komplett unsichtbar
 		//
-		(backpackContainer player) setObjectTextureGlobal [0, "#(rgb,0,0,0)color(0,0,0,0)"];
+		(backpackContainer player) setObjectTextureGlobal [0,""];
 
 		player setObjectTextureGlobal [0, "#(rgb,8,8,3)color(1,0,0,0)"];
 		
@@ -86,7 +86,7 @@ player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 		//
 		// macht jeden Rucksack komplett unsichtbar
 		//
-		(backpackContainer player) setObjectTextureGlobal [0, "#(rgb,0,0,0)color(0,0,0,0)"];
+		(backpackContainer player) setObjectTextureGlobal [0,""];
 		
 		player setObjectTextureGlobal [0, "#(rgb,8,8,3)color(1,0,0,0)"];
 
