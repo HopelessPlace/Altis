@@ -5,7 +5,7 @@
 	Description:
 	Main initialization for gangs?
 */
-private["_exitLoop","_group","_wait"];
+private["_exitLoop","_group","_wait", "_pos", "_marker"];
 if(playerSide != civilian) exitWith {}; //What in the hell?
 [player] join (createGroup civilian);
 if(EQUAL(count life_gangData,0)) exitWith {}; //Dafuq?

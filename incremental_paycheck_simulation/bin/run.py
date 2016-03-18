@@ -13,6 +13,8 @@ if __name__ == "__main__":
 	for timer in range(1,21600):
 		if timer % 600 == 0:
 			running_sum = running_sum + (timer * factor)
+		if timer % 3600 == 0:
+			print "## t_%i money: %i" % (timer / 3600, running_sum)
 
 	print "## total: %i " % running_sum
 	print

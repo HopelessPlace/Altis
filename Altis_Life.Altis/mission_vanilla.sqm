@@ -12078,11 +12078,22 @@ class Mission {
 			a=2;
 			b=2;
 		};
+
+		class Item238
+		{
+			position[]={5060.5522,248.38628,22046.535};
+			name="dhs_basis_marker";
+			text="[DHS] Basis";
+			type="mil_start";
+			colorName="ColorCIV";
+			a=1;
+			b=1;
+		};
 		
 		//
 		// XOXO Class Marker Item Counter
 		//
-		items=238;
+		items=239;
 	};
 };
 
